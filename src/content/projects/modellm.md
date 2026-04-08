@@ -5,7 +5,7 @@ url: "https://github.com/Zanger67/ModeLLM"
 repo: "https://github.com/Zanger67/ModeLLM"
 startDate: 2025-03-01
 endDate: 2025-05-01
-tags: ["Python", "OpenAI API", "AI/ML"]
+tags: ["Python", "OpenAI API", "Simulations"]
 pinned: true
 order: 2
 ---
