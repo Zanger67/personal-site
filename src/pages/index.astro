@@ -48,15 +48,32 @@ const projects = [
 ].slice(0, 3);
 ---
 
-<BaseLayout title="Buzz — Georgia Tech Mascot">
+<BaseLayout title="Anthony Zang">
   <div class="home-layout">
     <div class="main-col">
-      <h1>Hi, I'm Buzz.</h1>
-      <p class="subtitle">Official Mascot, Georgia Institute of Technology</p>
+      <h1>Hi, I'm Anthony.</h1>
+      <p class="subtitle">MS CS @ Georgia Tech, AI Safety Research</p>
       <p class="intro">
-        Official mascot of the Georgia Institute of Technology since 1979.
-        I do push-ups after touchdowns, ride the Ramblin' Wreck, and occasionally
-        <a href={`${base}/projects`}>take on side projects</a>.
+        I'm a Master's student in Computer Science at
+        <a href="https://gatech.edu" target="_blank" rel="noopener noreferrer">Georgia Tech</a>,
+        where my research focuses on AI safety, interpretability, and observability.
+        At the EILab under Professors Glenn and Riedl, I work on personality vectorization
+        and humanistic modeling in LLMs. I'm also a Graduate Lead TA for algorithms under
+        Professor Will Perkins. Previously, I Head TA'd Discrete Mathematics, led
+        pointcloud synthetic data research under Dr. Ling Liu at the DiSL Lab,
+        and managed HPC nodes with Team Phoenix.
+      </p>
+      <p class="intro">
+        I love to explore the wave of information that life provides. The settings I love
+        most are those where I get to meet others and where I'm aware that I'm surrounded
+        by knowledge I've yet to learn &mdash; where often I'm the least directly knowledgeable
+        person in the room.
+      </p>
+      <p class="intro">
+        In my free time, I love climbing trees, tending to my plants, making bouquets,
+        and finding chaotic adventures to best fulfil the experience of life.
+        I have a very low barrier to reach out &mdash; I'm always happy to meet new folks
+        and <a href={`${base}/contact`}>chat</a>.
       </p>
 
       {projects.length > 0 && (
@@ -79,7 +96,7 @@ const projects = [
         </section>
       )}
 
-      {publications.length > 0 && (
+      {/* {publications.length > 0 && (
         <section>
           <div class="section-header">
             <h2>Publications</h2>
@@ -96,7 +113,7 @@ const projects = [
             ))}
           </ul>
         </section>
-      )}
+      )} */}
 
       {posts.length > 0 && (
         <section>

@@ -1,8 +1,10 @@
 ---
-title: "Ramblin' Wreck Restoration"
-description: "Helped coordinate the annual maintenance and restoration of Georgia Tech's beloved 1930 Ford Model A Sport Coupe."
+title: "CouchMUN"
+description: "Open-source, locally run chairing platform for Model United Nations conferences. Deployed at conferences totaling 2,500+ participants."
+url: "https://github.com/gtmun/couchmun"
+repo: "https://github.com/gtmun/couchmun"
 startDate: 2024-06-01
-tags: ["Automotive", "Tradition"]
+tags: ["Svelte", "TypeScript", "Open Source"]
 pinned: true
 order: 1
 ---

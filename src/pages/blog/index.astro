@@ -9,10 +9,10 @@ const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<BaseLayout title="Blog — Buzz" description="Dispatches from the hive.">
+<BaseLayout title="Blog — Anthony Zang" description="Thoughts and notes.">
   <h1>Blog</h1>
   <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-    Dispatches from the hive.
+    Thoughts and notes.
   </p>
 
   {posts.length === 0 && <p>Nothing here yet. Check back soon.</p>}

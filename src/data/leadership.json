@@ -1,14 +1,38 @@
 [
   {
-    "organization": "ACC Mascot Council",
-    "role": "Chair",
-    "start": "2021-01",
-    "end": "2023-05"
+    "organization": "Georgia Tech Model United Nations",
+    "role": "GTMUN Conference USG (VP) Finance",
+    "start": "2023-11",
+    "end": "2024-10"
   },
   {
-    "organization": "Yellow Jacket Spirit Squad",
-    "role": "Captain",
-    "start": "2019-08",
-    "end": "2023-05"
+    "organization": "Georgia Tech Model United Nations",
+    "role": "GTMUN Conference aUSG (aVP) Administration",
+    "start": "2023-11",
+    "end": "2024-10"
+  },
+  {
+    "organization": "Georgia Tech Model United Nations",
+    "role": "Treasurer",
+    "start": "2023-12",
+    "end": "2025-03"
+  },
+  {
+    "organization": "Georgia Tech Model United Nations",
+    "role": "Member",
+    "start": "2022-09",
+    "end": null
+  },
+  {
+    "organization": "Pi Epsilon Phi",
+    "role": "Treasurer",
+    "start": null,
+    "end": null
+  },
+  {
+    "organization": "Georgia Tech Glee Club",
+    "role": "Webmaster",
+    "start": null,
+    "end": null
   }
 ]

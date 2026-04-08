@@ -9,7 +9,7 @@ interface Props {
   image?: string;
 }
 
-const { title, description = 'Buzz — Georgia Tech mascot, campus legend, and Yellow Jacket extraordinaire.', image = '/images/og-default.png' } = Astro.props;
+const { title, description = 'Anthony Zang — MS CS @ Georgia Tech, AI safety research.', image = '/images/og-default.png' } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image, Astro.site).href;
@@ -25,7 +25,7 @@ const ogImage = new URL(image, Astro.site).href;
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
-    <link rel="alternate" type="application/rss+xml" title="Buzz — Blog" href={`${base}/rss.xml`} />
+    <link rel="alternate" type="application/rss+xml" title="Anthony Zang — Blog" href={`${base}/rss.xml`} />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

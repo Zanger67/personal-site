@@ -1,62 +1,69 @@
 {
   "current": [
     {
-      "entity": "Georgia Institute of Technology",
-      "role": "Official Mascot",
-      "startDate": "1979-11",
+      "entity": "Human-Centered AI Lab, Georgia Tech",
+      "role": "Student Researcher",
+      "startDate": "2025-09",
       "endDate": null,
-      "url": "https://gatech.edu"
+      "url": null
     },
     {
-      "entity": "Georgia Institute of Technology",
-      "role": "Spirit Coordinator",
-      "startDate": "1985-08",
+      "entity": "Redwood Research",
+      "role": "Technical Staff (Part-Time)",
+      "startDate": "2026-03",
       "endDate": null,
-      "url": "https://gatech.edu"
+      "url": null
     },
     {
-      "entity": "Georgia Tech Athletic Association",
-      "role": "Game Day Director",
-      "startDate": "2005-01",
+      "entity": "College of Computing, Georgia Tech",
+      "role": "Graduate Lead Teaching Assistant of Algorithms",
+      "startDate": "2025-08",
       "endDate": null,
-      "url": "https://ramblinwreck.com"
+      "url": null
     }
   ],
   "past": [
     {
-      "entity": "ACC Mascot Council",
-      "role": "Chair",
-      "startDate": "2021-01",
-      "endDate": "2023-05",
+      "entity": "Datadog",
+      "role": "Backend & Infrastructure Software Engineering Intern",
+      "startDate": "2025-05",
+      "endDate": "2025-08",
       "url": null
     },
     {
-      "entity": "ACC Mascot Council",
-      "role": "Representative",
-      "startDate": "2018-01",
-      "endDate": "2020-12",
+      "entity": "Distributed Data-Intensive Systems Lab, Georgia Tech",
+      "role": "Student Researcher & Team Lead",
+      "startDate": "2025-09",
+      "endDate": "2025-12",
       "url": null
     },
     {
-      "entity": "Capital One Mascot Challenge",
-      "role": "Finalist",
-      "startDate": "2014-09",
-      "endDate": "2014-12",
+      "entity": "College of Computing, Georgia Tech",
+      "role": "Head Teaching Assistant of Discrete Mathematics (CS 2050)",
+      "startDate": "2024-01",
+      "endDate": "2025-05",
       "url": null
     },
     {
-      "entity": "Atlanta Olympics Committee",
-      "role": "Mascot Liaison",
-      "startDate": "1995-06",
-      "endDate": "1996-08",
+      "entity": "College of Computing, Georgia Tech",
+      "role": "Senior Teaching Assistant of Discrete Mathematics (CS 2050)",
+      "startDate": "2023-08",
+      "endDate": "2023-12",
       "url": null
     },
     {
-      "entity": "Coca-Cola Campus Ambassadors",
-      "role": "Brand Mascot Partner",
-      "startDate": "2010-03",
-      "endDate": "2015-12",
-      "url": "https://coca-cola.com"
+      "entity": "College of Computing, Georgia Tech",
+      "role": "Undergraduate Teaching Assistant of Discrete Mathematics (CS 2050)",
+      "startDate": "2023-01",
+      "endDate": "2023-08",
+      "url": null
+    },
+    {
+      "entity": "Team Phoenix Supercomputing Lab VIP, Georgia Tech",
+      "role": "Student Researcher",
+      "startDate": "2024-01",
+      "endDate": "2025-05",
+      "url": null
     }
   ]
 }
