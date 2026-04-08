@@ -3,8 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
 
-const projects = (await getCollection('projects'))
+const allProjects = (await getCollection('projects'))
   .sort((a, b) => a.data.order - b.data.order);
+
+const pinned = allProjects.filter(p => p.data.pinned);
+const rest = allProjects.filter(p => !p.data.pinned);
 ---
 
 <BaseLayout title="Projects — Buzz" description="Selected projects and campus initiatives.">
@@ -13,12 +16,50 @@ const projects = (await getCollection('projects'))
     Selected projects and campus initiatives.
   </p>
 
-  {projects.map(project => (
-    <ProjectCard
-      title={project.data.title}
-      description={project.data.description}
-      url={project.data.url || project.data.repo}
-      tags={project.data.tags}
-    />
-  ))}
+  {pinned.length > 0 && (
+    <section>
+      <h2 class="section-label">Pinned</h2>
+      {pinned.map(project => (
+        <ProjectCard
+          title={project.data.title}
+          description={project.data.description}
+          startDate={project.data.startDate}
+          endDate={project.data.endDate}
+          url={project.data.url || project.data.repo}
+          tags={project.data.tags}
+        />
+      ))}
+    </section>
+  )}
+
+  {rest.length > 0 && (
+    <section>
+      {pinned.length > 0 && <h2 class="section-label">All</h2>}
+      {rest.map(project => (
+        <ProjectCard
+          title={project.data.title}
+          description={project.data.description}
+          startDate={project.data.startDate}
+          endDate={project.data.endDate}
+          url={project.data.url || project.data.repo}
+          tags={project.data.tags}
+        />
+      ))}
+    </section>
+  )}
 </BaseLayout>
+
+<style>
+  .section-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  section:first-of-type .section-label {
+    margin-top: 0;
+  }
+</style>

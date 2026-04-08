@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import affiliations from '../data/affiliations.json';
+import publications from '../data/publications.json';
 
 interface OrgGroup {
   entity: string;
@@ -31,9 +32,12 @@ const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 
-const projects = (await getCollection('projects'))
-  .sort((a, b) => a.data.order - b.data.order)
-  .slice(0, 3);
+const allProjects = (await getCollection('projects'))
+  .sort((a, b) => a.data.order - b.data.order);
+const projects = [
+  ...allProjects.filter(p => p.data.pinned),
+  ...allProjects.filter(p => !p.data.pinned),
+].slice(0, 3);
 ---
 
 <BaseLayout title="Buzz — Georgia Tech Mascot">
@@ -60,6 +64,25 @@ const projects = (await getCollection('projects'))
                   {project.data.title}
                 </a>
                 <span class="muted"> &mdash; {project.data.description}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {publications.length > 0 && (
+        <section>
+          <div class="section-header">
+            <h2>Publications</h2>
+            <a href="/publications">View all &rarr;</a>
+          </div>
+          <ul class="link-list">
+            {publications.slice(0, 3).map(pub => (
+              <li>
+                {pub.url
+                  ? <a href={pub.url} target="_blank" rel="noopener noreferrer">{pub.title}</a>
+                  : <span class="pub-title">{pub.title}</span>}
+                <span class="muted"> &mdash; {pub.venue}, {pub.date}</span>
               </li>
             ))}
           </ul>
@@ -241,6 +264,10 @@ const projects = (await getCollection('projects'))
     padding: 0.4rem 0;
     font-size: 0.95rem;
     line-height: 1.5;
+  }
+
+  .pub-title {
+    font-size: 0.95rem;
   }
 
   .muted {
