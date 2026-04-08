@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import affiliations from '../data/affiliations.json';
+import leadership from '../data/leadership.json';
+import awards from '../data/awards.json';
+import involvements from '../data/involvements.json';
 
 interface Affiliation {
   entity: string;
@@ -105,6 +108,53 @@ const pastGroups = groupByEntity(affiliations.past);
       </div>
     ))}
   </div>
+
+  {leadership.length > 0 && (
+    <>
+      <h2>Leadership</h2>
+      <div class="groups">
+        {leadership.map(item => (
+          <div class="org-group">
+            <div class="org-name">{item.organization}</div>
+            <div class="role-row indented">
+              <span class="role-name">{item.role}</span>
+              <span class="role-dates">{formatDate(item.start)} &ndash; {formatDate(item.end)}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  )}
+
+  {awards.length > 0 && (
+    <>
+      <h2>Awards & Honors</h2>
+      <div class="groups">
+        {awards.map(award => (
+          <div class="org-group">
+            <div class="org-name">{award.name}</div>
+            <div class="role-row indented">
+              <span class="role-dates">{formatDate(award.date)}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  )}
+
+  {involvements.length > 0 && (
+    <>
+      <h2>Involvements</h2>
+      <ul class="involvement-list">
+        {involvements.map(inv => (
+          <li>
+            <span class="inv-name">{inv.name}</span>
+            {inv.role && <span class="inv-role"> &mdash; {inv.role}</span>}
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
 </BaseLayout>
 
 <style>
@@ -164,5 +214,29 @@ const pastGroups = groupByEntity(affiliations.past);
     white-space: nowrap;
     margin-left: auto;
     padding-left: 1rem;
+  }
+
+  .involvement-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .involvement-list li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+
+  .involvement-list li:last-child {
+    border-bottom: none;
+  }
+
+  .inv-name {
+    font-weight: 500;
+  }
+
+  .inv-role {
+    color: var(--text-muted);
+    font-size: 0.85rem;
   }
 </style>

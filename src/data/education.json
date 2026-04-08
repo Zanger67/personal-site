@@ -1,0 +1,17 @@
+[
+  {
+    "institution": "Georgia Institute of Technology",
+    "degree": "MS Mascot Sciences",
+    "start": "2023-08",
+    "end": null,
+    "url": "https://gatech.edu"
+  },
+  {
+    "institution": "Georgia Institute of Technology",
+    "degree": "BS Spirit Engineering",
+    "start": "2019-08",
+    "end": "2023-05",
+    "honors": "Summa Cum Laude",
+    "url": "https://gatech.edu"
+  }
+]
