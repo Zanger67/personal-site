@@ -1,0 +1,308 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import affiliations from '../data/affiliations.json';
+import publications from '../data/publications.json';
+
+interface OrgGroup {
+  entity: string;
+  url: string | null;
+  roles: string[];
+}
+
+function groupByEntity(items: typeof affiliations.current): OrgGroup[] {
+  const groups: OrgGroup[] = [];
+  const seen = new Map<string, OrgGroup>();
+  for (const item of items) {
+    if (seen.has(item.entity)) {
+      seen.get(item.entity)!.roles.push(item.role);
+    } else {
+      const group: OrgGroup = { entity: item.entity, url: item.url, roles: [item.role] };
+      groups.push(group);
+      seen.set(item.entity, group);
+    }
+  }
+  return groups;
+}
+
+const currentGroups = groupByEntity(affiliations.current);
+
+const posts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+
+const allProjects = (await getCollection('projects'))
+  .sort((a, b) => a.data.order - b.data.order);
+const projects = [
+  ...allProjects.filter(p => p.data.pinned),
+  ...allProjects.filter(p => !p.data.pinned),
+].slice(0, 3);
+---
+
+<BaseLayout title="Buzz — Georgia Tech Mascot">
+  <div class="home-layout">
+    <div class="main-col">
+      <h1>Hi, I'm Buzz.</h1>
+      <p class="subtitle">Official Mascot, Georgia Institute of Technology</p>
+      <p class="intro">
+        Official mascot of the Georgia Institute of Technology since 1979.
+        I do push-ups after touchdowns, ride the Ramblin' Wreck, and occasionally
+        <a href="/projects">take on side projects</a>.
+      </p>
+
+      {projects.length > 0 && (
+        <section>
+          <div class="section-header">
+            <h2>Projects</h2>
+            <a href="/projects">View all &rarr;</a>
+          </div>
+          <ul class="link-list">
+            {projects.map(project => (
+              <li>
+                <a href={project.data.url || project.data.repo || '#'}
+                   target="_blank" rel="noopener noreferrer">
+                  {project.data.title}
+                </a>
+                <span class="muted"> &mdash; {project.data.description}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {publications.length > 0 && (
+        <section>
+          <div class="section-header">
+            <h2>Publications</h2>
+            <a href="/publications">View all &rarr;</a>
+          </div>
+          <ul class="link-list">
+            {publications.slice(0, 3).map(pub => (
+              <li>
+                {pub.url
+                  ? <a href={pub.url} target="_blank" rel="noopener noreferrer">{pub.title}</a>
+                  : <span class="pub-title">{pub.title}</span>}
+                <span class="muted"> &mdash; {pub.venue}, {pub.date}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {posts.length > 0 && (
+        <section>
+          <div class="section-header">
+            <h2>Recent Posts</h2>
+            <a href="/blog">View all &rarr;</a>
+          </div>
+          <ul class="link-list">
+            {posts.map(post => (
+              <li>
+                <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                <span class="muted"> &mdash; {post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </div>
+
+    <aside class="sidebar">
+      <img
+        src="/images/profile.svg"
+        alt="Profile photo"
+        class="profile-img"
+        width="150"
+        height="150"
+      />
+
+      <div class="sidebar-section">
+        <h3>Affiliations</h3>
+        <div class="aff-groups">
+          {currentGroups.map(group => (
+            <div class="aff-group">
+              <div class="aff-entity">
+                {group.url
+                  ? <a href={group.url} target="_blank" rel="noopener noreferrer">{group.entity}</a>
+                  : group.entity}
+              </div>
+              {group.roles.map((role, i) => {
+                const multi = group.roles.length > 1;
+                const isLast = i === group.roles.length - 1;
+                const glyph = multi ? (isLast ? '└' : '├') : '';
+                return (
+                  <div class:list={['aff-role-row', { indented: !multi }]}>
+                    {multi && <span class="bracket">{glyph}</span>}
+                    <span class="aff-role">{role}</span>
+                  </div>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+        <a href="/experience" class="view-all">All experience &rarr;</a>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .home-layout {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  :global(main:has(.home-layout)) {
+    max-width: 880px;
+  }
+
+  .main-col {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .main-col h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    margin-bottom: 2rem;
+  }
+
+  /* Sidebar */
+
+  .sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    padding-top: 0.25rem;
+  }
+
+  .profile-img {
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  .sidebar-section h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .aff-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .aff-entity {
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .aff-role-row {
+    display: flex;
+    align-items: baseline;
+    padding: 0.05rem 0;
+  }
+
+  .aff-role-row.indented {
+    padding-left: 1rem;
+  }
+
+  .bracket {
+    font-family: monospace;
+    color: var(--text-muted);
+    width: 1rem;
+    flex-shrink: 0;
+    user-select: none;
+    font-size: 0.8rem;
+  }
+
+  .aff-role {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+
+  .view-all {
+    display: inline-block;
+    font-size: 0.78rem;
+    margin-top: 0.75rem;
+  }
+
+  /* Main column sections */
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-header h2 {
+    margin-bottom: 0;
+  }
+
+  .section-header a {
+    font-size: 0.85rem;
+  }
+
+  .link-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .link-list li {
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .pub-title {
+    font-size: 0.95rem;
+  }
+
+  .muted {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+
+  @media (max-width: 640px) {
+    .home-layout {
+      flex-direction: column-reverse;
+      gap: 1.5rem;
+    }
+
+    :global(main:has(.home-layout)) {
+      max-width: var(--max-width);
+    }
+
+    .sidebar {
+      width: 100%;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+
+    .profile-img {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 0;
+    }
+  }
+</style>
