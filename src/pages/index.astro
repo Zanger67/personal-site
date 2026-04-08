@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import affiliations from '../data/affiliations.json';
 import publications from '../data/publications.json';
+import education from '../data/education.json';
+import languages from '../data/languages.json';
 
 const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
 const profileShape: 'circle' | 'rectangle' = 'circle';
@@ -74,7 +76,7 @@ const projects = [
         </section>
       )}
 
-      {publications.length > 0 && (
+      {/* {publications.length > 0 && (
         <section>
           <div class="section-header">
             <h2>Publications</h2>
@@ -91,7 +93,7 @@ const projects = [
             ))}
           </ul>
         </section>
-      )}
+      )} */}
 
       {posts.length > 0 && (
         <section>
@@ -120,6 +122,25 @@ const projects = [
         height="150"
       />
 
+      {education.length > 0 && (
+        <div class="sidebar-section">
+          <h3>Education</h3>
+          <div class="edu-list">
+            {education.map(ed => (
+              <div class="edu-item">
+                <div class="edu-degree">{ed.degree}</div>
+                <div class="edu-school">
+                  {ed.url
+                    ? <a href={ed.url} target="_blank" rel="noopener noreferrer">{ed.institution}</a>
+                    : ed.institution}
+                </div>
+                {ed.honors && <div class="edu-honors">{ed.honors}</div>}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div class="sidebar-section">
         <h3>Affiliations</h3>
         <div class="aff-groups">
@@ -146,6 +167,20 @@ const projects = [
         </div>
         <a href={`${base}/experience`} class="view-all">All experience &rarr;</a>
       </div>
+
+      {languages.length > 0 && (
+        <div class="sidebar-section">
+          <h3>Languages</h3>
+          <div class="lang-list">
+            {languages.map(lang => (
+              <div class="lang-item">
+                <span class="lang-name">{lang.language}</span>
+                <span class="lang-fluency">{lang.fluency}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </aside>
   </div>
 </BaseLayout>
@@ -249,6 +284,49 @@ const projects = [
     display: inline-block;
     font-size: 0.78rem;
     margin-top: 0.75rem;
+  }
+
+  .edu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .edu-degree {
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .edu-school {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+
+  .edu-honors {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .lang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .lang-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+  }
+
+  .lang-name {
+    font-weight: 500;
+  }
+
+  .lang-fluency {
+    color: var(--text-muted);
   }
 
   /* Main column sections */
