@@ -1,5 +1,5 @@
 ---
-import { regions, alaskaInset, hawaiiInset, greatLakes } from '../data/map-paths';
+import { regions, alaskaInset, hawaiiInset, greatLakes, dcAreaHiRes } from '../data/map-paths';
 import mapConfig from '../data/map-config.json';
 
 interface Props {
@@ -11,8 +11,7 @@ const visitedSet = new Set(mapConfig.visited);
 const activeSet = new Set(mapConfig.activeCities);
 const continentalRegions = regions.filter(r => r.id !== 'US-AK' && r.id !== 'US-HI');
 const activeCities = mapConfig.cities.filter(c => activeSet.has(c.id));
-const dcAreaIds = new Set(['US-DC', 'US-MD', 'US-VA', 'US-DE', 'US-PA', 'US-NJ', 'US-WV']);
-const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
+// Use high-res 10m data for DC inset instead of the 50m continental paths
 ---
 
 <div class:list={['map-container', className]}>
@@ -39,6 +38,7 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
             class:list={['region', { visited: visitedSet.has(r.id) }]}
             data-abbr={r.abbr}
             data-name={r.name}
+            data-region={r.id}
           />
         ))}
       </g>
@@ -73,7 +73,7 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
       <g class="inset-group">
         <rect x="475" y="521" width="65" height="42" class="inset-border" rx="2" />
         <text x="479" y="531" class="inset-label">HI</text>
-        <g transform="translate(392, 478) scale(2.2)">
+        <g class="hi-inset-regions" transform="translate(361, 460) scale(2.8)">
           <path
             id={hawaiiInset.id}
             d={hawaiiInset.d}
@@ -93,20 +93,21 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
           </clipPath>
         </defs>
         <rect x="858" y="502" width="72" height="60" class="inset-border" rx="2" />
-        <text x="862" y="512" class="inset-label">DC</text>
         <g clip-path="url(#dc-clip)">
-          <g class="dc-inset-regions" transform="translate(-1347, -702) scale(2.8)">
-            {dcAreaRegions.map((r) => (
+          <g class="dc-inset-regions" transform="translate(-15911, -8730) scale(21)">
+            {dcAreaHiRes.map((r) => (
               <path
                 d={r.d}
                 fill-rule={r.fillRule || undefined}
                 class:list={['region', { visited: visitedSet.has(r.id) }]}
                 data-abbr={r.abbr}
                 data-name={r.name}
+                data-region={r.id}
               />
             ))}
           </g>
         </g>
+        <text x="862" y="512" class="inset-label">DC</text>
         {/* Leader lines from DC on main map to inset */}
         <line x1="800" y1="441" x2="858" y2="510" class="dc-leader" />
         <line x1="800" y1="441" x2="858" y2="540" class="dc-leader" />
@@ -175,10 +176,23 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
 
 <style>
   .map-container {
+    --map-land: #e4e7e5;
+    --map-visited: #c2dbc5;
+    --map-water: #f7f9fb;
+    --map-border: #b8c2b9;
+    --map-hover: #5a8f62;
     border: 1px solid var(--border);
     border-radius: 6px;
     overflow: hidden;
     background: var(--bg);
+  }
+
+  :global(html[data-theme="dark"]) .map-container {
+    --map-land: var(--bg-alt);
+    --map-visited: var(--accent-light);
+    --map-water: var(--bg);
+    --map-border: var(--border);
+    --map-hover: var(--accent);
   }
 
   .map-header {
@@ -240,8 +254,8 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
   }
 
   .region {
-    fill: var(--bg-alt);
-    stroke: var(--border);
+    fill: var(--map-land);
+    stroke: var(--map-border);
     stroke-width: 0.8;
     stroke-dasharray: 3 2;
     cursor: pointer;
@@ -249,32 +263,42 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
   }
 
   .lake {
-    fill: var(--bg);
-    stroke: var(--border);
+    fill: var(--map-water);
+    stroke: var(--map-border);
     stroke-width: 0.4;
     stroke-dasharray: 1.5 1.5;
     pointer-events: none;
   }
 
   .region.visited {
-    fill: var(--accent-light);
+    fill: var(--map-visited);
   }
 
-  .region:hover {
-    fill: var(--accent);
+  .region:hover,
+  .region.hovered {
+    fill: var(--map-hover);
     fill-opacity: 0.35;
-    stroke: var(--accent);
+    stroke: var(--map-hover);
     stroke-width: 0.8;
     stroke-dasharray: none;
   }
 
-  .dc-inset-regions .region {
-    stroke-width: 0.2;
+  .hi-inset-regions .region {
+    stroke-width: 0.22;
     stroke-dasharray: 0.8 0.6;
   }
 
-  .dc-inset-regions .region:hover {
+  .hi-inset-regions .region:hover {
     stroke-width: 0.3;
+  }
+
+  .dc-inset-regions .region {
+    stroke-width: 0.03;
+    stroke-dasharray: 0.12 0.1;
+  }
+
+  .dc-inset-regions .region:hover {
+    stroke-width: 0.05;
   }
 
   .dc-leader {
@@ -283,14 +307,15 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
     stroke-dasharray: 2 2;
   }
 
-  .region.visited:hover {
-    fill: var(--accent);
+  .region.visited:hover,
+  .region.visited.hovered {
+    fill: var(--map-hover);
     fill-opacity: 0.35;
   }
 
   .inset-border {
-    fill: var(--bg);
-    stroke: var(--border);
+    fill: var(--map-water);
+    stroke: var(--map-border);
     stroke-width: 0.5;
     stroke-dasharray: 2 2;
   }
@@ -301,6 +326,7 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
     fill: var(--text-muted);
     opacity: 0.6;
   }
+
 
   .city-dot {
     fill: var(--accent);
@@ -350,13 +376,13 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
     display: inline-block;
     width: 12px;
     height: 12px;
-    border: 1px dashed var(--border);
+    border: 1px dashed var(--map-border);
     border-radius: 2px;
-    background: var(--bg-alt);
+    background: var(--map-land);
   }
 
   .legend-swatch.visited {
-    background: var(--accent-light);
+    background: var(--map-visited);
     border-style: solid;
     border-color: var(--accent);
   }
@@ -401,20 +427,42 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
   if (svg && tooltip && tooltipAbbr && tooltipName) {
     let currentRegion: Element | null = null;
 
-    function showTooltip(region: Element) {
-      if (region === currentRegion) return;
-      currentRegion = region;
+    let currentRegionId: string | null = null;
 
+    function showTooltip(region: Element) {
+      const regionId = region.getAttribute('data-region');
+      if (regionId === currentRegionId) return;
+
+      // Clear previous hover
+      if (currentRegionId) {
+        svg!.querySelectorAll(`.region[data-region="${currentRegionId}"]`).forEach(el => {
+          el.classList.remove('hovered');
+        });
+      }
+
+      currentRegionId = regionId;
       tooltipAbbr.textContent = region.getAttribute('data-abbr') || '';
       tooltipName.textContent = region.getAttribute('data-name') || '';
 
       tooltip.classList.remove('visible');
       void tooltip.offsetWidth;
       tooltip.classList.add('visible');
+
+      // Highlight all matching paths
+      if (regionId) {
+        svg!.querySelectorAll(`.region[data-region="${regionId}"]`).forEach(el => {
+          el.classList.add('hovered');
+        });
+      }
     }
 
     function hideTooltip() {
-      currentRegion = null;
+      if (currentRegionId) {
+        svg!.querySelectorAll(`.region[data-region="${currentRegionId}"]`).forEach(el => {
+          el.classList.remove('hovered');
+        });
+        currentRegionId = null;
+      }
       tooltip.classList.remove('visible');
     }
 
@@ -431,11 +479,16 @@ const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
       hideTooltip();
     });
 
-    // Click to toggle visited
+    // Click to toggle visited — sync all paths for the same region
     svg.addEventListener('click', (e) => {
       const region = (e.target as Element).closest('.region');
       if (!region) return;
-      region.classList.toggle('visited');
+      const regionId = region.getAttribute('data-region');
+      if (!regionId) return;
+      const isVisited = !region.classList.contains('visited');
+      svg.querySelectorAll(`.region[data-region="${regionId}"]`).forEach(el => {
+        el.classList.toggle('visited', isVisited);
+      });
     });
 
     // Touch support
