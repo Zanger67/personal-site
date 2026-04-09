@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import NorthAmericaMap from '../components/NorthAmericaMap.astro';
 import { getCollection } from 'astro:content';
 import affiliations from '../data/affiliations.json';
 import publications from '../data/publications.json';
@@ -86,6 +87,14 @@ const projects = [
         Very low barrier to reach out &mdash; always happy to meet new folks, 
         offer perspective, and <a href={`${base}/contact`}>chat</a>!
       </p>
+
+      <section>
+        <div class="section-header">
+          <h2>Places</h2>
+          <a href={`${base}/map`}>View full map &rarr;</a>
+        </div>
+        <NorthAmericaMap />
+      </section>
 
       {projects.length > 0 && (
         <section>

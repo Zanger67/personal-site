@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NorthAmericaMap from '../components/NorthAmericaMap.astro';
+---
+
+<BaseLayout title="Map — Buzz">
+  <h1>Places</h1>
+  <p class="subtitle">States, provinces, and cities I've been to.</p>
+  <NorthAmericaMap />
+</BaseLayout>
+
+<style>
+  :global(main:has(.map-container)) {
+    max-width: var(--max-width-wide);
+  }
+
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin-bottom: 1.5rem;
+  }
+</style>
