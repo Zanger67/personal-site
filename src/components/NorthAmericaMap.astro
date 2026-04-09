@@ -11,6 +11,8 @@ const visitedSet = new Set(mapConfig.visited);
 const activeSet = new Set(mapConfig.activeCities);
 const continentalRegions = regions.filter(r => r.id !== 'US-AK' && r.id !== 'US-HI');
 const activeCities = mapConfig.cities.filter(c => activeSet.has(c.id));
+const dcAreaIds = new Set(['US-DC', 'US-MD', 'US-VA', 'US-DE', 'US-PA', 'US-NJ', 'US-WV']);
+const dcAreaRegions = continentalRegions.filter(r => dcAreaIds.has(r.id));
 ---
 
 <div class:list={['map-container', className]}>
@@ -70,6 +72,30 @@ const activeCities = mapConfig.cities.filter(c => activeSet.has(c.id));
             data-abbr={hawaiiInset.abbr}
             data-name={hawaiiInset.name}
           />
+        </g>
+      </g>
+
+      {/* DC area inset — bottom-right */}
+      <g class="inset-group">
+        <defs>
+          <clipPath id="dc-clip">
+            <rect x="858" y="502" width="72" height="60" />
+          </clipPath>
+        </defs>
+        <rect x="858" y="502" width="72" height="60" class="inset-border" rx="2" />
+        <text x="862" y="512" class="inset-label">DC</text>
+        <g clip-path="url(#dc-clip)">
+          <g transform="translate(-1906, -1008) scale(3.5)">
+            {dcAreaRegions.map((r) => (
+              <path
+                d={r.d}
+                fill-rule={r.fillRule || undefined}
+                class:list={['region', { visited: visitedSet.has(r.id) }]}
+                data-abbr={r.abbr}
+                data-name={r.name}
+              />
+            ))}
+          </g>
         </g>
       </g>
 
