@@ -1,43 +1,47 @@
-# Buzz
+# Anthony Zang
 
-> Personal site of Buzz — the official mascot of the Georgia Institute of Technology.
+> Personal site of Anthony Zang — MS CS student at Georgia Tech, AI safety researcher.
 
 ## About
 
-Buzz is a Yellow Jacket who has served as the official mascot of Georgia Tech since 1979. He can be found at football games doing push-ups after every score, riding atop the Ramblin' Wreck, and generally maintaining school spirit across campus.
+Anthony is a Master's student in Computer Science at Georgia Institute of Technology, where his research focuses on AI safety, interpretability, and observability. He works at the Human-Centered AI Lab (EILab) under Dr. Mark Riedl and PhD Candidate Glenn Matlin on persona vectors and humanistic modeling in LLMs. He is also a part-time Technical Staff member at Redwood Research and a Lead Graduate TA for Algorithms (CS 3510).
+
+## Education
+
+- Georgia Institute of Technology — MS Computer Science (Aug 2025 – present)
+- Georgia Institute of Technology — BS Computer Science (Aug 2021 – May 2025), Highest Honours
 
 ## Current Affiliations
 
-- Georgia Institute of Technology — Official Mascot (since Nov 1979)
-- Georgia Tech Athletic Association — Spirit Coordinator (since Aug 1985)
+- Human-Centered AI Lab, Georgia Tech — Student Researcher (Sep 2025 – present)
+- Redwood Research — Technical Staff, Part-Time (Mar 2026 – present)
+- College of Computing, Georgia Tech — Lead Graduate Teaching Assistant of Algorithms, CS 3510 (Aug 2025 – present)
 
 ## Past Affiliations
 
-- ACC Mascot Council — Representative (Jan 2018 – May 2023)
-- Capital One Mascot Challenge — Finalist (Sep 2014 – Dec 2014)
-- Atlanta Olympics Committee — Mascot Liaison (Jun 1995 – Aug 1996)
-- Coca-Cola Campus Ambassadors — Brand Mascot Partner (Mar 2010 – Dec 2015)
+- Datadog — Backend & Infrastructure Software Engineering Intern (May 2025 – Aug 2025)
+- DDiSL Lab, Georgia Tech (Dr. Ling Liu) — Student Researcher & Team Lead (Sep 2025 – Dec 2025)
+- College of Computing, Georgia Tech — Head TA of Discrete Mathematics, CS 2050 (Jan 2024 – May 2025)
+- College of Computing, Georgia Tech — Senior TA of Discrete Mathematics, CS 2050 (Aug 2023 – Dec 2023)
+- College of Computing, Georgia Tech — Undergraduate TA of Discrete Mathematics, CS 2050 (Jan 2023 – Aug 2023)
+- Team Phoenix Supercomputing Lab VIP, Georgia Tech — Student Researcher (Jan 2024 – May 2025)
 
-## Selected Publications
+## Involvements
 
-- "On the Aerodynamics of Yellow Jacket Wings During Push-Up Sequences" — Journal of Mascot Sciences, 2025
-- "Crowd Engagement Dynamics at College Football Games: A Longitudinal Study" — Proceedings of the International Mascot Conference, 2023
-- "Optimal Push-Up Timing for Maximum Crowd Response: A Data-Driven Approach" — IEEE Transactions on Spirit Engineering, 2021
-
-## Selected Projects
-
-- Ramblin' Wreck Restoration: annual maintenance of the 1930 Ford Model A
-- Game Day Hype Analytics: crowd energy tracking across 24 home games
-- Hive Redesign: mascot lounge and memorabilia refresh
-- Fight Song Remix Archive: collection of every Ramblin' Wreck arrangement
-- Campus Tour Guide Bot: automated tour guide for prospective students
+- AI Safety Initiative at Georgia Tech — Technical Fellow
+- GT Model United Nations — Treasurer & Conference VP
+- GT International Ambassadors — Outreach & Finance
+- GT Glee Club — Webmaster
+- GT Pi Epsilon Phi — Treasurer
+- GT Chamber Choir
+- GT Motor Sports FSAE
+- GT Seek Discomfort
+- Yellow Jacket Fencing Club
+- GT Gold Fellas — Organiser
 
 ## Links
 
-- GitHub: https://github.com
-- LinkedIn: https://linkedin.com
-- Email: buzz@example.com
-
-## Skills
-
-Crowd engagement, push-ups, motorcycle riding, crowd surfing, school spirit, mascot choreography, traditions maintenance
+- GitHub: https://github.com/Zanger67
+- LinkedIn: https://linkedin.com/in/zang
+- Email: azang3@gatech.edu
+- Twitter: https://twitter.com/anthonywzang

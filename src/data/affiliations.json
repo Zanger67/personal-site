@@ -12,7 +12,14 @@
       "role": "Technical Staff (Part-Time)",
       "startDate": "2026-03",
       "endDate": null,
-      "url": null
+      "url": "https://www.redwoodresearch.org/"
+    },
+    {
+      "entity": "AI Safety Initiative at Georgia Tech",
+      "role": "Technical Fellow",
+      "startDate": "2025-09",
+      "endDate": null,
+      "url": "https://www.aisi.dev/"
     },
     {
       "entity": "College of Computing, Georgia Tech",
@@ -64,7 +71,7 @@
       "role": "Student Researcher",
       "startDate": "2024-01",
       "endDate": "2025-05",
-      "url": null
+      "url": "https://gt-chipc.github.io/gt-student-cluster-competition/"
     }
   ]
 }
