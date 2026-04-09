@@ -1,31 +1,36 @@
 {
   "visited": [
+    "CA-AB",
+    "CA-BC",
+    "CA-ON",
+    "CA-QC",
+    "US-AZ",
     "US-CA",
-    "US-FL",
+    "US-CO",
+    "US-CT",
+    "US-DC",
     "US-GA",
-    "US-IN",
-    "US-KY",
-    "US-MA",
+    "US-IL",
+    "US-MD",
+    "US-MI",
     "US-NC",
+    "US-NJ",
     "US-NY",
+    "US-OH",
+    "US-OR",
     "US-PA",
     "US-SC",
+    "US-TN",
     "US-TX",
-    "US-VA"
+    "US-UT",
+    "US-VA",
+    "US-WA"
   ],
   "activeCities": [
-    "albany-ny",
     "atlanta-ga",
-    "austin-tx",
-    "boston-ma",
-    "columbia-sc",
-    "frankfort-ky",
-    "harrisburg-pa",
-    "indianapolis-in",
-    "raleigh-nc",
-    "richmond-va",
-    "sacramento-ca",
-    "tallahassee-fl"
+    "new-york-ny",
+    "seattle-wa",
+    "vancouver-bc"
   ],
   "cities": [
     {
@@ -1545,7 +1550,7 @@
     {
       "id": "vancouver-bc",
       "label": "Vancouver, BC",
-      "type": "past",
+      "type": "hometown",
       "x": 479,
       "y": 345,
       "labelOffset": {
