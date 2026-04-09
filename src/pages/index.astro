@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import NorthAmericaMap from '../components/NorthAmericaMap.astro';
 import { getCollection } from 'astro:content';
 import affiliations from '../data/affiliations.json';
 import publications from '../data/publications.json';
@@ -62,6 +63,14 @@ const projects = [
         I do push-ups after touchdowns, ride the Ramblin' Wreck, and occasionally
         <a href={`${base}/projects`}>take on side projects</a>.
       </p>
+
+      <section>
+        <div class="section-header">
+          <h2>Places</h2>
+          <a href={`${base}/map`}>View full map &rarr;</a>
+        </div>
+        <NorthAmericaMap />
+      </section>
 
       {projects.length > 0 && (
         <section>
