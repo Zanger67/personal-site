@@ -1,0 +1,43 @@
+{
+  "visited": [
+    "US-GA",
+    "US-AL",
+    "US-FL",
+    "US-SC",
+    "US-NC",
+    "US-VA",
+    "US-TN",
+    "US-LA",
+    "US-TX",
+    "CA-ON"
+  ],
+  "cities": [
+    {
+      "id": "atlanta",
+      "label": "Atlanta, GA",
+      "region": "US-GA",
+      "x": 747,
+      "y": 448,
+      "labelOffset": { "dx": 20, "dy": -18 },
+      "labelAnchor": "start"
+    },
+    {
+      "id": "charlottesville",
+      "label": "Charlottesville, VA",
+      "region": "US-VA",
+      "x": 793,
+      "y": 411,
+      "labelOffset": { "dx": 20, "dy": -12 },
+      "labelAnchor": "start"
+    },
+    {
+      "id": "toronto",
+      "label": "Toronto, ON",
+      "region": "CA-ON",
+      "x": 768,
+      "y": 371,
+      "labelOffset": { "dx": 18, "dy": -14 },
+      "labelAnchor": "start"
+    }
+  ]
+}
