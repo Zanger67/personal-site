@@ -1,11 +1,12 @@
 [
-  { "name": "Model United Nations", "role": "Treasurer & USG" },
-  { "name": "International Ambassadors", "role": null },
-  { "name": "Chamber Choir", "role": null },
-  { "name": "Glee Club", "role": "Webmaster" },
-  { "name": "Pi Epsilon Phi", "role": "Treasurer" },
-  { "name": "Motor Sports FSAE", "role": null },
-  { "name": "Seek Discomfort", "role": null },
+  { "name": "AI Safety Initiative at Georgia Tech", "role": "Technical Fellow", "start": "2025-09", "end": null },
+  { "name": "GT Model United Nations", "role": "Treasurer (club), VP Finance, aVP Logistics, & aVP Admin (conference)" },
+  { "name": "GT International Ambassadors", "role": "Outreach & Finance" },
+  { "name": "GT Glee Club", "role": "Webmaster" },
+  { "name": "GT Pi Epsilon Phi", "role": "Treasurer" },
+  { "name": "GT Chamber Choir", "role": null },
+  { "name": "GT Motor Sports FSAE", "role": null },
+  { "name": "GT Seek Discomfort", "role": null },
   { "name": "Yellow Jacket Fencing Club", "role": null },
-  { "name": "Gold Fellas", "role": "Organiser" }
+  { "name": "GT Gold Fellas", "role": "Organiser" }
 ]
