@@ -4,7 +4,7 @@
 
 ## About
 
-Anthony is a Master's student in Computer Science at Georgia Institute of Technology, where his research focuses on AI safety, interpretability, and observability. He works at the Human-Centered AI Lab (EILab) under Dr. Mark Riedl and PhD Candidate Glenn Matlin on persona vectors and humanistic modeling in LLMs. He is also a part-time Technical Staff member at Redwood Research and a Lead Graduate TA for Algorithms (CS 3510).
+Anthony is a Master's student in Computer Science at Georgia Institute of Technology, where his research focuses on AI safety, interpretability, and observability. He works at the Human-Centered AI Lab (EILab) under Dr. Mark Riedl and PhD Candidate Glenn Matlin on persona vectors and humanistic modeling in LLMs. He is also a Lead Graduate TA for Algorithms (CS 3510).
 
 ## Education
 
@@ -14,7 +14,6 @@ Anthony is a Master's student in Computer Science at Georgia Institute of Techno
 ## Current Affiliations
 
 - Human-Centered AI Lab, Georgia Tech — Student Researcher (Sep 2025 – present)
-- Redwood Research — Technical Staff, Part-Time (Mar 2026 – present)
 - College of Computing, Georgia Tech — Lead Graduate Teaching Assistant of Algorithms, CS 3510 (Aug 2025 – present)
 
 ## Past Affiliations
