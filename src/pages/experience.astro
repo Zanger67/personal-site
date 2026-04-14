@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import affiliations from '../data/affiliations.json';
 import leadership from '../data/leadership.json';
 import awards from '../data/awards.json';
+import conferences from '../data/conferences.json';
 import involvements from '../data/involvements.json';
 
 interface Affiliation {
@@ -62,27 +63,20 @@ function groupByEntity(items: Affiliation[]): OrgGroup[] {
 const currentGroups = groupByEntity(affiliations.current);
 const pastGroups = groupByEntity(affiliations.past);
 
-interface LeaderGroup {
-  org: string;
-  roles: typeof leadership;
+interface LeaderRole {
+  role: string;
+  url?: string | null;
+  start: string | null;
+  end: string | null;
 }
 
-function groupLeadership(items: typeof leadership): LeaderGroup[] {
-  const groups: LeaderGroup[] = [];
-  const seen = new Map<string, typeof leadership>();
-  for (const item of items) {
-    if (seen.has(item.organization)) {
-      seen.get(item.organization)!.push(item);
-    } else {
-      const roles = [item];
-      groups.push({ org: item.organization, roles });
-      seen.set(item.organization, roles);
-    }
-  }
-  return groups;
+interface LeaderOrg {
+  organization: string;
+  url: string | null;
+  roles: LeaderRole[];
 }
 
-const leaderGroups = groupLeadership(leadership);
+const leaderGroups = leadership as LeaderOrg[];
 ---
 
 <BaseLayout title="Experience — Anthony Zang" description="Current and past affiliations.">
@@ -149,15 +143,22 @@ const leaderGroups = groupLeadership(leadership);
       <div class="groups">
         {leaderGroups.map(group => (
           <div class="org-group">
-            <div class="org-name">{group.org}</div>
+            <div class="org-name">
+              {group.url
+                ? <a href={group.url} target="_blank" rel="noopener noreferrer">{group.organization}</a>
+                : group.organization}
+            </div>
             {group.roles.map((item, i) => {
               const isLast = i === group.roles.length - 1;
               const glyph = isLast ? '└' : '├';
               const dates = dateRange(item.start, item.end);
+              const roleUrl = item.url ?? null;
               return (
                 <div class="role-row">
                   <span class="bracket">{glyph}</span>
-                  <span class="role-name">{item.role}</span>
+                  <span class="role-name">{roleUrl
+                    ? <a href={roleUrl} target="_blank" rel="noopener noreferrer">{item.role}</a>
+                    : item.role}</span>
                   {dates && <span class="role-dates">{dates}</span>}
                 </div>
               );
@@ -174,8 +175,26 @@ const leaderGroups = groupLeadership(leadership);
       <ul class="involvement-list">
         {awards.map(award => (
           <li class="award-row">
-            <span class="inv-name">{award.name}</span>
+            <span class="inv-name">{award.url
+              ? <a href={award.url} target="_blank" rel="noopener noreferrer">{award.name}</a>
+              : award.name}</span>
             <span class="role-dates">{formatDate(award.date)}</span>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  {conferences.length > 0 && (
+    <>
+      <h2>Conferences</h2>
+      <ul class="involvement-list">
+        {conferences.map(conf => (
+          <li class="award-row">
+            <span class="inv-name">{conf.url
+              ? <a href={conf.url} target="_blank" rel="noopener noreferrer">{conf.name}</a>
+              : conf.name}</span>
+            <span class="role-dates">{formatDate(conf.date)}</span>
           </li>
         ))}
       </ul>

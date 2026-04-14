@@ -1,12 +1,12 @@
 [
   { "name": "AI Safety Initiative at Georgia Tech", "role": "Technical Fellow", "start": "2025-09", "end": null, "url": "https://www.aisi.dev/" },
-  { "name": "GT Model United Nations", "role": "Treasurer (club), VP Finance, aVP Logistics, & aVP Admin (conference)" },
-  { "name": "GT International Ambassadors", "role": "Outreach & Finance" },
-  { "name": "GT Glee Club", "role": "Webmaster" },
+  { "name": "GT Model United Nations", "role": "Treasurer (club), VP Finance, aVP Logistics, & aVP Admin (conference)", "url": "https://gtmun.gatech.edu/" },
+  { "name": "GT International Ambassadors", "role": "Outreach & Finance", "url": "https://gtia.gtorg.gatech.edu/" },
+  { "name": "GT Glee Club", "role": "Webmaster", "url": "https://music.gatech.edu/glee-club" },
   { "name": "GT Pi Epsilon Phi", "role": "Treasurer" },
   { "name": "GT Chamber Choir", "role": null },
-  { "name": "GT Motor Sports FSAE", "role": null },
+  { "name": "GT Motor Sports FSAE", "role": null, "url": "https://www.gtms.gatech.edu/" },
   { "name": "GT Seek Discomfort", "role": null },
   { "name": "Yellow Jacket Fencing Club", "role": null },
-  { "name": "GT Gold Fellas", "role": "Organiser" }
+  { "name": "GT Gold Fellas", "role": "Organiser", "url": "https://traditions.gatech.edu/goldfellas.html" }
 ]

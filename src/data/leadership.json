@@ -1,44 +1,55 @@
 [
   {
     "organization": "Georgia Tech Model United Nations",
-    "role": "Treasurer",
-    "start": "2023-12",
-    "end": "2025-03"
-  },
-  {
-    "organization": "Georgia Tech Model United Nations",
-    "role": "GTMUN Conference USG (VP) Finance",
-    "start": "2023-11",
-    "end": "2024-10"
-  },
-  {
-    "organization": "Georgia Tech Model United Nations",
-    "role": "GTMUN Conference aUSG (aVP) Logistics",
-    "start": "2022-11",
-    "end": "2023-10"
-  },
-  {
-    "organization": "Georgia Tech Model United Nations",
-    "role": "GTMUN Conference aUSG (aVP) Administration",
-    "start": "2022-11",
-    "end": "2023-10"
-  },
-  {
-    "organization": "Georgia Tech Model United Nations",
-    "role": "Member",
-    "start": "2022-09",
-    "end": null
+    "url": "https://gtmun.gatech.edu/",
+    "roles": [
+      {
+        "role": "Treasurer",
+        "start": "2023-12",
+        "end": "2025-03"
+      },
+      {
+        "role": "GTMUN Conference USG (VP) Finance",
+        "start": "2023-11",
+        "end": "2024-10"
+      },
+      {
+        "role": "GTMUN Conference aUSG (aVP) Logistics",
+        "start": "2022-11",
+        "end": "2023-10"
+      },
+      {
+        "role": "GTMUN Conference aUSG (aVP) Administration",
+        "start": "2022-11",
+        "end": "2023-10"
+      },
+      {
+        "role": "Member",
+        "start": "2022-09",
+        "end": null
+      }
+    ]
   },
   {
     "organization": "Pi Epsilon Phi",
-    "role": "Treasurer",
-    "start": null,
-    "end": null
+    "url": null,
+    "roles": [
+      {
+        "role": "Treasurer",
+        "start": null,
+        "end": null
+      }
+    ]
   },
   {
     "organization": "Georgia Tech Glee Club",
-    "role": "Webmaster",
-    "start": null,
-    "end": null
+    "url": "https://music.gatech.edu/glee-club",
+    "roles": [
+      {
+        "role": "Webmaster",
+        "start": null,
+        "end": null
+      }
+    ]
   }
 ]
