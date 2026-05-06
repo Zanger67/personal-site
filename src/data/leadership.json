@@ -2,6 +2,7 @@
   {
     "organization": "Georgia Tech Model United Nations",
     "url": "https://gtmun.gatech.edu/",
+    "location": null,
     "roles": [
       {
         "role": "Treasurer",
@@ -33,6 +34,7 @@
   {
     "organization": "Pi Epsilon Phi",
     "url": null,
+    "location": null,
     "roles": [
       {
         "role": "Treasurer",
@@ -44,6 +46,7 @@
   {
     "organization": "Georgia Tech Glee Club",
     "url": "https://music.gatech.edu/glee-club",
+    "location": null,
     "roles": [
       {
         "role": "Webmaster",

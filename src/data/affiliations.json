@@ -5,14 +5,16 @@
       "role": "Student Researcher",
       "startDate": "2025-09",
       "endDate": null,
-      "url": "https://eilab.gatech.edu/"
+      "url": "https://eilab.gatech.edu/",
+      "location": null
     },
     {
       "entity": "AI Safety Initiative at Georgia Tech",
       "role": "Technical Fellow",
       "startDate": "2025-09",
       "endDate": null,
-      "url": "https://www.aisi.dev/"
+      "url": "https://www.aisi.dev/",
+      "location": null
     },
     {
       "entity": "College of Computing, Georgia Tech",
@@ -20,7 +22,8 @@
       "roleDetail": "Lead Graduate Teaching Assistant of Algorithms (CS 3510)",
       "startDate": "2025-08",
       "endDate": null,
-      "url": null
+      "url": null,
+      "location": null
     }
   ],
   "past": [
@@ -29,42 +32,48 @@
       "role": "Backend & Infrastructure Software Engineering Intern",
       "startDate": "2025-05",
       "endDate": "2025-08",
-      "url": null
+      "url": null,
+      "location": null
     },
     {
       "entity": "Advised Research under Dr. Ling Liu (DDiSL, Georgia Tech)",
       "role": "Student Researcher & Team Lead",
       "startDate": "2025-09",
       "endDate": "2025-12",
-      "url": "https://scholar.google.com/citations?user=VIwtdckAAAAJ&hl=en"
+      "url": "https://scholar.google.com/citations?user=VIwtdckAAAAJ&hl=en",
+      "location": null
     },
     {
       "entity": "College of Computing, Georgia Tech",
       "role": "Head Teaching Assistant of Discrete Mathematics (CS 2050)",
       "startDate": "2024-01",
       "endDate": "2025-05",
-      "url": null
+      "url": null,
+      "location": null
     },
     {
       "entity": "College of Computing, Georgia Tech",
       "role": "Senior Teaching Assistant of Discrete Mathematics (CS 2050)",
       "startDate": "2023-08",
       "endDate": "2023-12",
-      "url": null
+      "url": null,
+      "location": null
     },
     {
       "entity": "College of Computing, Georgia Tech",
       "role": "Undergraduate Teaching Assistant of Discrete Mathematics (CS 2050)",
       "startDate": "2023-01",
       "endDate": "2023-08",
-      "url": null
+      "url": null,
+      "location": null
     },
     {
       "entity": "Team Phoenix Supercomputing Lab VIP, Georgia Tech",
       "role": "Student Researcher",
       "startDate": "2024-01",
       "endDate": "2025-05",
-      "url": "https://gt-chipc.github.io/gt-student-cluster-competition/"
+      "url": "https://gt-chipc.github.io/gt-student-cluster-competition/",
+      "location": null
     }
   ]
 }

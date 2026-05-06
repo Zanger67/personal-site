@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "Single-Serving Sites",
+      "description": "One page, one purpose, no further explanation needed.",
+      "items": [
+        {
+          "title": "Rotating Sandwiches",
+          "url": "https://rotatingsandwiches.com",
+          "description": "Sandwiches. Rotating."
+        },
+        {
+          "title": "mmm.gatech.edu",
+          "url": "https://mmm.gatech.edu"
+        }
+      ]
+    }
+  ]
+}
