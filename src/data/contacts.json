@@ -1,0 +1,68 @@
+[
+  {
+    "label": "Georgia Tech Email",
+    "value": "azang3 [at] gatech [dot] edu"
+  },
+  {
+    "label": "LinkedIn",
+    "url": "https://linkedin.com/in/zang",
+    "display": "linkedin.com/in/zang",
+    "subs": [
+      {
+        "url": "https://www.linkedin.com/groups/12276091/",
+        "display": "linkedin.com/groups/gt-international-ambassadors"
+      },
+      {
+        "url": "https://www.linkedin.com/groups/2101/",
+        "display": "linkedin.com/groups/shad-canada"
+      },
+      {
+        "url": "https://www.linkedin.com/groups/14135814/",
+        "display": "linkedin.com/groups/gt-model-united-nations"
+      }
+    ]
+  },
+  {
+    "label": "GitHub",
+    "url": "https://github.com/Zanger67",
+    "display": "github.com/Zanger67",
+    "subs": [
+      {
+        "url": "https://github.com/eilab-gt",
+        "display": "github.com/eilab-gt"
+      },
+      {
+        "url": "https://github.com/gtmun",
+        "display": "github.com/gtmun"
+      },
+      {
+        "url": "https://github.com/CS-2050",
+        "display": "github.com/CS-2050"
+      },
+      {
+        "url": "https://github.com/GleeClub",
+        "display": "github.com/GleeClub"
+      },
+      {
+        "url": "https://github.com/x16140",
+        "display": "github.com/x16140"
+      }
+    ]
+  },
+  {
+    "label": "Twitter",
+    "url": "https://twitter.com/anthonywzang",
+    "display": "@anthonywzang"
+  },
+  {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/zangydev",
+    "display": "huggingface.co/zangydev",
+    "subs": [
+      {
+        "url": "https://huggingface.co/HCAI-Lab",
+        "display": "huggingface.co/HCAI-Lab"
+      }
+    ]
+  }
+]
