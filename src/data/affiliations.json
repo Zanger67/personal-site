@@ -26,7 +26,7 @@
   },
   {
     "organization": "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech",
-    "organizationShort": "EI/HCAI Lab, GT",
+    "organizationShort": "EI/HCAI Lab, Georgia Tech",
     "url": "https://eilab.gatech.edu/",
     "urls": [
       { "url": "https://huggingface.co/HCAI-Lab" },
@@ -46,7 +46,7 @@
         "end": null,
         "main": true,
         "homepage": true,
-        "homepage_org_name": "EI/HCAI Lab, GT",
+        "homepage_org_name": "EI/HCAI Lab, Georgia Tech",
         "description": null,
         "url": null
       }
@@ -65,8 +65,7 @@
       "start": "2025-08",
       "end": "2026-05",
       "description": null,
-      "url": null,
-      "homepage": true
+      "url": null
     },
     "alumnus": {
       "start": "2026-05",
