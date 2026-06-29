@@ -1,17 +1,21 @@
 [
   {
     "institution": "Georgia Institute of Technology",
+    "institutionShort": "Georgia Tech",
     "degree": "MS Computer Science",
-    "start": "2025-08",
-    "end": null,
-    "url": "https://gatech.edu"
+    "start": "2024-08",
+    "end": "2026-05",
+    "url": "https://gatech.edu",
+    "main": true
   },
   {
     "institution": "Georgia Institute of Technology",
+    "institutionShort": "Georgia Tech",
     "degree": "BS Computer Science",
-    "start": "2021-08",
+    "start": "2022-08",
     "end": "2025-05",
     "honors": "Highest Honours",
-    "url": "https://gatech.edu"
+    "url": "https://gatech.edu",
+    "main": true
   }
 ]

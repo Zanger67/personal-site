@@ -1,79 +1,201 @@
-{
-  "current": [
-    {
-      "entity": "Human-Centered AI Lab, Georgia Tech",
-      "role": "Student Researcher",
-      "startDate": "2025-09",
-      "endDate": null,
-      "url": "https://eilab.gatech.edu/",
-      "location": null
-    },
-    {
-      "entity": "AI Safety Initiative at Georgia Tech",
-      "role": "Technical Fellow",
-      "startDate": "2025-09",
-      "endDate": null,
-      "url": "https://www.aisi.dev/",
-      "location": null
-    },
-    {
-      "entity": "College of Computing, Georgia Tech",
-      "role": "Lead Graduate Teaching Assistant of Algorithms",
-      "roleDetail": "Lead Graduate Teaching Assistant of Algorithms (CS 3510)",
-      "startDate": "2025-08",
-      "endDate": null,
+[
+  {
+    "organization": "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech",
+    "organizationShort": "EI/HCAI Lab, GT",
+    "url": "https://eilab.gatech.edu/",
+    "location": "Atlanta, GA",
+    "categories": ["research", "work"],
+    "displayTimeline": true,
+    "main": true,
+    "relationGroups": [],
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "AI Researcher",
+        "roleDetail": null,
+        "start": "2025-09",
+        "end": null,
+        "main": true,
+        "homepage": true,
+        "description": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "organization": "AI Safety Initiative at Georgia Tech",
+    "organizationShort": "GT AISI",
+    "url": "https://www.aisi.dev/",
+    "location": "Atlanta, GA",
+    "categories": ["research", "work"],
+    "displayTimeline": true,
+    "main": true,
+    "relationGroups": ["aisi"],
+    "membership": {
+      "start": "2025-08",
+      "end": "2026-05",
+      "description": null,
       "url": null,
-      "location": null
-    }
-  ],
-  "past": [
-    {
-      "entity": "Datadog",
-      "role": "Backend & Infrastructure Software Engineering Intern",
-      "startDate": "2025-05",
-      "endDate": "2025-08",
-      "url": null,
-      "location": null
+      "homepage": true
     },
-    {
-      "entity": "Advised Research under Dr. Ling Liu (DDiSL, Georgia Tech)",
-      "role": "Student Researcher & Team Lead",
-      "startDate": "2025-09",
-      "endDate": "2025-12",
-      "url": "https://scholar.google.com/citations?user=VIwtdckAAAAJ&hl=en",
-      "location": null
+    "alumnus": {
+      "start": "2026-05",
+      "end": null,
+      "description": null,
+      "url": null
     },
-    {
-      "entity": "College of Computing, Georgia Tech",
-      "role": "Head Teaching Assistant of Discrete Mathematics (CS 2050)",
-      "startDate": "2024-01",
-      "endDate": "2025-05",
-      "url": null,
-      "location": null
+    "roles": [
+      {
+        "role": "Technical Fellow",
+        "roleDetail": null,
+        "start": "2025-08",
+        "end": "2025-12",
+        "main": true,
+        "homepage": true,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
+    "organization": "College of Computing, Georgia Tech",
+    "organizationShort": "GT Computing",
+    "url": null,
+    "location": "Atlanta, GA",
+    "categories": ["work"],
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Lead Graduate Teaching Assistant of Algorithms",
+        "roleDetail": "Lead Graduate Teaching Assistant of Algorithms (CS 3510)",
+        "start": "2025-08",
+        "end": "2026-05",
+        "main": false,
+        "homepage": true,
+        "description": null,
+        "url": null,
+        "location": null
+      },
+      {
+        "role": "Head Teaching Assistant of Discrete Mathematics (CS 2050)",
+        "roleDetail": null,
+        "start": "2024-01",
+        "end": "2025-05",
+        "main": false,
+        "homepage": false,
+        "description": null,
+        "url": null,
+        "location": null
+      },
+      {
+        "role": "Senior Teaching Assistant of Discrete Mathematics (CS 2050)",
+        "roleDetail": null,
+        "start": "2023-08",
+        "end": "2023-12",
+        "main": false,
+        "homepage": false,
+        "description": null,
+        "url": null,
+        "location": null
+      },
+      {
+        "role": "Undergraduate Teaching Assistant of Discrete Mathematics (CS 2050)",
+        "roleDetail": null,
+        "start": "2023-01",
+        "end": "2023-08",
+        "main": false,
+        "homepage": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
+    "organization": "Datadog",
+    "organizationShort": null,
+    "url": null,
+    "location": "NYC, New York",
+    "categories": ["work"],
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Backend & Infrastructure Software Engineering Intern",
+        "roleDetail": null,
+        "start": "2025-05",
+        "end": "2025-08",
+        "main": true,
+        "homepage": false,
+        "description": "Intern on the RAPID Workloads team -- Rapid API Deployment.",
+        "url": null
+      }
+    ]
+  },
+  {
+    "organization": "Advised Research under Dr. Ling Liu (DDiSL, Georgia Tech)",
+    "organizationShort": "DDiSL",
+    "url": "https://scholar.google.com/citations?user=VIwtdckAAAAJ&hl=en",
+    "location": "Atlanta, GA",
+    "categories": ["research"],
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": "2025-09",
+      "end": "2025-12",
+      "description": null,
+      "url": null
     },
-    {
-      "entity": "College of Computing, Georgia Tech",
-      "role": "Senior Teaching Assistant of Discrete Mathematics (CS 2050)",
-      "startDate": "2023-08",
-      "endDate": "2023-12",
-      "url": null,
-      "location": null
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Student Researcher & Team Lead",
+        "roleDetail": null,
+        "start": "2025-09",
+        "end": "2025-12",
+        "main": false,
+        "homepage": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
+    "organization": "Team Phoenix Supercomputing Lab VIP, Georgia Tech",
+    "organizationShort": "Team Phoenix",
+    "url": "https://gt-chipc.github.io/gt-student-cluster-competition/",
+    "location": "Atlanta, GA",
+    "categories": ["research"],
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": ["team-phoenix"],
+    "membership": {
+      "start": "2024-01",
+      "end": "2025-05",
+      "description": null,
+      "url": null
     },
-    {
-      "entity": "College of Computing, Georgia Tech",
-      "role": "Undergraduate Teaching Assistant of Discrete Mathematics (CS 2050)",
-      "startDate": "2023-01",
-      "endDate": "2023-08",
-      "url": null,
-      "location": null
-    },
-    {
-      "entity": "Team Phoenix Supercomputing Lab VIP, Georgia Tech",
-      "role": "Student Researcher",
-      "startDate": "2024-01",
-      "endDate": "2025-05",
-      "url": "https://gt-chipc.github.io/gt-student-cluster-competition/",
-      "location": null
-    }
-  ]
-}
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Student Researcher",
+        "roleDetail": null,
+        "start": "2024-01",
+        "end": "2025-05",
+        "main": false,
+        "homepage": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "organization": "Georgia Tech Model United Nations",
+    "organizationShort": "GTMUN",
+    "url": "https://gtmun.gatech.edu/",
+    "location": "Atlanta, GA",
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": "2022-09",
+      "end": "2026-05",
+      "description": null,
+      "url": null
+    },
+    "alumnus": {
+      "start": "2026-05",
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "roles": [
+      {
+        "role": "Treasurer",
+        "roleDetail": null,
+        "start": "2023-12",
+        "end": "2025-03",
+        "main": true,
+        "description": null,
+        "url": null
+      },
+      {
+        "role": "USG (VP) Conference Finances",
+        "roleDetail": null,
+        "start": "2023-11",
+        "end": "2024-10",
+        "main": true,
+        "description": null,
+        "url": null
+      },
+      {
+        "role": "aUSG (aVP) Conference Logistics",
+        "roleDetail": null,
+        "start": "2022-11",
+        "end": "2023-10",
+        "main": true,
+        "description": null,
+        "url": null
+      },
+      {
+        "role": "aUSG (aVP) Conference Administration",
+        "roleDetail": null,
+        "start": "2022-11",
+        "end": "2023-10",
+        "main": false,
+        "description": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "organization": "GT International Ambassadors",
+    "organizationShort": null,
+    "url": "https://gtia.gtorg.gatech.edu/",
+    "location": null,
+    "displayTimeline": false,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Outreach & Finance",
+        "roleDetail": null,
+        "start": null,
+        "end": null,
+        "main": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
+    "organization": "GT Glee Club",
+    "organizationShort": null,
+    "url": "https://music.gatech.edu/glee-club",
+    "location": "Atlanta, GA",
+    "displayTimeline": false,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Webmaster",
+        "roleDetail": null,
+        "start": null,
+        "end": null,
+        "main": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
+    "organization": "GT Pi Epsilon Phi",
+    "organizationShort": null,
+    "url": null,
+    "location": "Atlanta, GA",
+    "displayTimeline": false,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Treasurer",
+        "roleDetail": null,
+        "start": null,
+        "end": null,
+        "main": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
+    "organization": "GT Chamber Choir",
+    "organizationShort": null,
+    "url": null,
+    "location": null,
+    "displayTimeline": false,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": []
+  },
+  {
+    "organization": "GT Motor Sports FSAE",
+    "organizationShort": null,
+    "url": "https://www.gtms.gatech.edu/",
+    "location": null,
+    "displayTimeline": false,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": []
+  },
+  {
+    "organization": "GT Supercomputing Club",
+    "organizationShort": null,
+    "url": null,
+    "location": null,
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": []
+  },
+  {
+    "organization": "GT Seek Discomfort",
+    "organizationShort": null,
+    "url": null,
+    "location": null,
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": []
+  },
+  {
+    "organization": "Yellow Jacket Fencing Club",
+    "organizationShort": null,
+    "url": null,
+    "location": null,
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": []
+  },
+  {
+    "organization": "GT Gold Fellas",
+    "organizationShort": null,
+    "url": "https://traditions.gatech.edu/goldfellas.html",
+    "location": null,
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Organiser",
+        "roleDetail": null,
+        "start": null,
+        "end": null,
+        "main": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
+    "organization": "SHAD Canada",
+    "organizationShort": null,
+    "url": "https://www.shad.ca/",
+    "location": null,
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": {
+      "start": null,
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "alumnus": {
+      "start": "2020",
+      "end": null,
+      "description": null,
+      "url": null
+    },
+    "roles": []
+  }
+]
