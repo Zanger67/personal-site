@@ -1,7 +1,7 @@
 [
   {
     "organization": "Redwood Research",
-    "organizationShort": null,
+    "organizationShort": "Redwood Research",
     "url": "https://www.redwoodresearch.org/",
     "location": null,
     "categories": ["research", "work"],
@@ -28,6 +28,10 @@
     "organization": "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech",
     "organizationShort": "EI/HCAI Lab, GT",
     "url": "https://eilab.gatech.edu/",
+    "urls": [
+      { "url": "https://huggingface.co/HCAI-Lab" },
+      { "url": "https://github.com/eilab-gt" }
+    ],
     "location": "Atlanta, GA",
     "categories": ["research", "work"],
     "displayTimeline": true,
@@ -86,7 +90,7 @@
   },
   {
     "organization": "College of Computing, Georgia Tech",
-    "organizationShort": "GT Computing",
+    "organizationShort": "Georgia Tech",
     "url": null,
     "location": "Atlanta, GA",
     "categories": ["work"],
@@ -166,7 +170,7 @@
   },
   {
     "organization": "Advised Research under Dr. Ling Liu (DDiSL, Georgia Tech)",
-    "organizationShort": "DDiSL",
+    "organizationShort": "DDiSL, GT",
     "url": "https://scholar.google.com/citations?user=VIwtdckAAAAJ&hl=en",
     "location": "Atlanta, GA",
     "categories": ["research"],
@@ -196,7 +200,7 @@
   },
   {
     "organization": "Team Phoenix Supercomputing Lab VIP, Georgia Tech",
-    "organizationShort": "Team Phoenix",
+    "organizationShort": "Team Phoenix Lab, GT",
     "url": "https://gt-chipc.github.io/gt-student-cluster-competition/",
     "location": "Atlanta, GA",
     "categories": ["research"],

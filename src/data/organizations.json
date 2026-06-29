@@ -3,6 +3,13 @@
     "organization": "Georgia Tech Model United Nations",
     "organizationShort": "GTMUN",
     "url": "https://gtmun.gatech.edu/",
+    "urls": [
+      {
+        "title": "linkedin.com/groups/gt-model-united-nations",
+        "url": "https://www.linkedin.com/groups/14135814/"
+      },
+      { "url": "https://github.com/gtmun" }
+    ],
     "location": "Atlanta, GA",
     "displayTimeline": true,
     "main": false,
@@ -62,6 +69,12 @@
     "organization": "GT International Ambassadors",
     "organizationShort": null,
     "url": "https://gtia.gtorg.gatech.edu/",
+    "urls": [
+      {
+        "title": "linkedin.com/groups/gt-international-ambassadors",
+        "url": "https://www.linkedin.com/groups/12276091/"
+      }
+    ],
     "location": null,
     "displayTimeline": false,
     "main": false,
@@ -116,7 +129,7 @@
   },
   {
     "organization": "GT Pi Epsilon Phi",
-    "organizationShort": null,
+    "organizationShort": "GT PIEP",
     "url": null,
     "location": "Atlanta, GA",
     "displayTimeline": false,
@@ -259,6 +272,12 @@
     "organization": "SHAD Canada",
     "organizationShort": null,
     "url": "https://www.shad.ca/",
+    "urls": [
+      {
+        "title": "linkedin.com/groups/shad-canada",
+        "url": "https://www.linkedin.com/groups/2101/"
+      }
+    ],
     "location": null,
     "displayTimeline": true,
     "main": false,
