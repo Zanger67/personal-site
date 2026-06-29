@@ -42,6 +42,7 @@
         "end": null,
         "main": true,
         "homepage": true,
+        "homepage_org_name": "EI/HCAI Lab, GT",
         "description": null,
         "url": null
       }
@@ -100,7 +101,7 @@
         "start": "2025-08",
         "end": "2026-05",
         "main": false,
-        "homepage": true,
+        "homepage": false,
         "description": null,
         "url": null,
         "location": null
