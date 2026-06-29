@@ -1,5 +1,30 @@
 [
   {
+    "organization": "Redwood Research",
+    "organizationShort": null,
+    "url": "https://www.redwoodresearch.org/",
+    "location": null,
+    "categories": ["research", "work"],
+    "displayTimeline": true,
+    "main": true,
+    "relationGroups": ["aisi"],
+    "membership": null,
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "AI Research Engineer (contract)",
+        "roleDetail": null,
+        "start": "2026-03",
+        "end": null,
+        "main": true,
+        "homepage": true,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
     "organization": "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech",
     "organizationShort": "EI/HCAI Lab, GT",
     "url": "https://eilab.gatech.edu/",
@@ -29,7 +54,7 @@
     "location": "Atlanta, GA",
     "categories": ["research", "work"],
     "displayTimeline": true,
-    "main": true,
+    "main": false,
     "relationGroups": ["aisi"],
     "membership": {
       "start": "2025-08",
@@ -46,7 +71,7 @@
     },
     "roles": [
       {
-        "role": "Technical Fellow",
+        "role": "Technical Fellow (BlueDot Equivalent)",
         "roleDetail": null,
         "start": "2025-08",
         "end": "2025-12",
