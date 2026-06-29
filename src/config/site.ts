@@ -86,7 +86,7 @@ export const homeSections = {
   friends: true,       // the "Misc." research-friends block
   education: true,     // sidebar
   affiliations: true,  // sidebar
-  languages: true,     // sidebar
+  languages: false,    // sidebar — hidden for now
 } as const;
 
 export type HomeSectionId = keyof typeof homeSections;
