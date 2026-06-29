@@ -781,7 +781,12 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
 
   {/* ===================== EXPERIENCE (list) VIEW ===================== */}
   <section class="view view-list" data-view="list" aria-label="Experience list view" hidden>
-    <p class="view-intro">Current and past affiliations.</p>
+    {/* Mirrors the timeline's layout: the list sits in .tl-content with its own
+        sliding info tab (.tl-detail) to the right. Every row carries a `data-li`
+        id into the #tl-list-data dataset; clicking it opens the panel. */}
+    <div class="tl-layout">
+      <div class="tl-content">
+    <p class="view-intro">Current and past affiliations. Click any entry for details.</p>
 
     <h2>Current</h2>
     <div class="groups">
@@ -801,11 +806,9 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
               const glyph = isLast ? '└' : '├';
               const dates = dateRange(r.start, r.end);
               return (
-                <div class="role-row">
+                <div class="role-row" data-li={r.id} role="button" tabindex="0">
                   <span class="bracket">{glyph}</span>
-                  <span class="role-name">{r.url
-                    ? <a href={r.url} target="_blank" rel="noopener noreferrer">{r.role}</a>
-                    : r.role}</span>
+                  <span class="role-name">{r.role}</span>
                   {dates && <span class="role-dates">{dates}</span>}
                 </div>
               );
@@ -833,11 +836,9 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
               const glyph = isLast ? '└' : '├';
               const dates = dateRange(r.start, r.end);
               return (
-                <div class="role-row">
+                <div class="role-row" data-li={r.id} role="button" tabindex="0">
                   <span class="bracket">{glyph}</span>
-                  <span class="role-name">{r.url
-                    ? <a href={r.url} target="_blank" rel="noopener noreferrer">{r.role}</a>
-                    : r.role}</span>
+                  <span class="role-name">{r.role}</span>
                   {dates && <span class="role-dates">{dates}</span>}
                 </div>
               );
@@ -865,13 +866,10 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
                 const isLast = i === group.roles.length - 1;
                 const glyph = isLast ? '└' : '├';
                 const dates = dateRange(item.start, item.end);
-                const roleUrl = item.url ?? null;
                 return (
-                  <div class="role-row">
+                  <div class="role-row" data-li={item.id} role="button" tabindex="0">
                     <span class="bracket">{glyph}</span>
-                    <span class="role-name">{roleUrl
-                      ? <a href={roleUrl} target="_blank" rel="noopener noreferrer">{item.role}</a>
-                      : item.role}</span>
+                    <span class="role-name">{item.role}</span>
                     {dates && <span class="role-dates">{dates}</span>}
                   </div>
                 );
@@ -882,15 +880,13 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
       </>
     )}
 
-    {awards.length > 0 && (
+    {awardRows.length > 0 && (
       <>
         <h2>Awards & Honors</h2>
         <ul class="involvement-list">
-          {awards.map(award => (
-            <li class="award-row">
-              <span class="inv-name">{award.url
-                ? <a href={award.url} target="_blank" rel="noopener noreferrer">{award.name}</a>
-                : award.name}</span>
+          {awardRows.map(award => (
+            <li class="award-row" data-li={award.liId} role="button" tabindex="0">
+              <span class="inv-name">{award.name}</span>
               <span class="role-dates">{formatDate(award.date)}</span>
             </li>
           ))}
@@ -898,15 +894,13 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
       </>
     )}
 
-    {conferences.length > 0 && (
+    {conferenceRows.length > 0 && (
       <>
         <h2>Conferences</h2>
         <ul class="involvement-list">
-          {conferences.map(conf => (
-            <li class="award-row">
-              <span class="inv-name">{conf.url
-                ? <a href={conf.url} target="_blank" rel="noopener noreferrer">{conf.name}</a>
-                : conf.name}</span>
+          {conferenceRows.map(conf => (
+            <li class="award-row" data-li={conf.liId} role="button" tabindex="0">
+              <span class="inv-name">{conf.name}</span>
               <span class="role-dates">{formatDate(conf.date)}</span>
             </li>
           ))}
@@ -919,20 +913,33 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
         <h2>Involvements</h2>
         <ul class="involvement-list">
           {involvementListItems.map(inv => (
-            <li>
-              <span class="inv-name">{inv.url
-                ? <a href={inv.url} target="_blank" rel="noopener noreferrer">{inv.name}</a>
-                : inv.name}</span>
+            <li data-li={inv.liId} role="button" tabindex="0">
+              <span class="inv-name">{inv.name}</span>
               {inv.role && <span class="inv-role"> &mdash; {inv.role}</span>}
             </li>
           ))}
         </ul>
       </>
     )}
+      </div>
+
+      {/* ===== INFO TAB for the list view — the same sliding panel as the
+          timeline's, opened by clicking a list row. ===== */}
+      <aside class="tl-detail tl-detail-list" aria-hidden="true">
+        <div class="tl-detail-panel">
+          <button class="tl-detail-close" aria-label="Close details (Esc)">
+            <svg class="tl-detail-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span class="tl-detail-close-label">esc</span>
+          </button>
+          <div class="tl-detail-body"></div>
+        </div>
+      </aside>
+    </div>
   </section>
 
   <script type="application/json" id="tl-data" set:html={JSON.stringify(items)}></script>
   <script type="application/json" id="tl-cfg" set:html={JSON.stringify(cfg)}></script>
+  <script type="application/json" id="tl-list-data" set:html={JSON.stringify(listItems)}></script>
 </BaseLayout>
 
 <!-- Page-only: width + globally-styled JS-created bars. Width rules are gated on
@@ -943,14 +950,24 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
      present) so the page animates smoothly when SHRINKING to the list view too —
      not just when growing back to the timeline. Slow, ease-in-out for a gentle
      expand/retract. */
-  main:has(.view-switch) { transition: max-width 0.55s cubic-bezier(0.4, 0, 0.2, 1); }
+  /* --tl-detail-gap is the breathing room between the content and the info tab's
+     border line, so a full-width "Present" bar (or a list row's dates) doesn't
+     butt up against it. The open-width rules below add it on top of the drawer
+     width, and the info tab takes it as a left margin (see .tl-detail.open), so
+     the content's own width still holds constant as the tab slides in. */
+  main:has(.view-switch) { --tl-detail-gap: 1.25rem; transition: max-width 0.55s cubic-bezier(0.4, 0, 0.2, 1); }
   main:has(.view-timeline.active) { max-width: 1080px; }
-  /* Drawer-open width = closed content (1040) + drawer (360) + main padding (40).
-     Because this width and the drawer's flex-basis share the same transition,
-     the timeline's own width stays constant while the drawer slides in. */
-  main:has(.view-timeline.active .tl-detail.open) { max-width: 1440px; }
+  /* Drawer-open width = closed content (1040) + gap + drawer (360) + main padding
+     (40). This width, the gap, and the drawer's flex-basis share one transition,
+     so the timeline's own width stays constant while the drawer slides in. */
+  main:has(.view-timeline.active .tl-detail.open) { max-width: calc(1440px + var(--tl-detail-gap)); }
+  /* The list view keeps the default page width (--max-width); opening its info
+     tab widens `main` by the drawer width (360px) + the gap so the list content
+     underneath holds its width as the panel slides in — same trick as above. */
+  main:has(.view-list:not([hidden]) .tl-detail.open) { max-width: calc(var(--max-width) + 360px + var(--tl-detail-gap)); }
   /* Always reserve the page scrollbar gutter so widths don't jump on scroll. */
   html:has(.view-timeline.active) { scrollbar-gutter: stable; }
+  html:has(.view-list:not([hidden])) { scrollbar-gutter: stable; }
 
   /* Pre-hydration: the inline script at the top of the page sets these on <html>
      from the URL hash BEFORE the view markup is parsed, so a reload on the list
@@ -988,16 +1005,9 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
     flex: 0 1000 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis;
     color: var(--text-muted); font-weight: 400;
   }
-  .tl-bar .o::before { content: ', '; }
-  /* Leading variant: when the org has a short form it prefixes the title as
-     "Short Org · Role". The org is now the stable label, so it keeps its width
-     while the *title* surrenders first; the separator sits after the org.
-     Non-breaking spaces flank the dot so the trailing one isn't trimmed at the
-     end of the org's (nowrap) line — a normal space there disappears. */
-  .tl-bar .o.lead { flex: 0 1 auto; }
-  .tl-bar .o.lead::before { content: none; }
-  .tl-bar .o.lead::after { content: '\00a0·\00a0'; }
-  .tl-bar:has(.o.lead) .t { flex: 0 1000 auto; }
+  /* Middle-dot separator before the org; non-breaking spaces keep it from being
+     trimmed or wrapped against the title's (nowrap) line. */
+  .tl-bar .o::before { content: '\00a0·\00a0'; }
   .tl-bar:hover { border-color: var(--accent); }
   .tl-bar:hover { text-decoration: none; }
   /* Selection emphasis, layered above the dimmed background:
@@ -1124,7 +1134,10 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
     display: flex;
     align-items: baseline;
     gap: 0;
-    padding: 0.15rem 0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.12s, opacity 0.12s;
   }
 
   .bracket {
@@ -1159,14 +1172,31 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
   }
 
   .involvement-list li {
-    padding: 0.4rem 0;
+    padding: 0.4rem;
     border-bottom: 1px solid var(--border);
     font-size: 0.92rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.12s, opacity 0.12s;
   }
 
   .involvement-list li:last-child {
     border-bottom: none;
   }
+
+  /* List rows are clickable and open the info tab, mirroring the timeline bars:
+     hover hints interactivity; selecting a row emphasises it (sel-primary) and
+     any related rows (same org / shared relation-group), and dims the rest. */
+  .role-row:hover,
+  .involvement-list li:hover { background: color-mix(in srgb, var(--accent) 9%, transparent); }
+  .li-sel-related { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .li-sel-primary {
+    background: color-mix(in srgb, var(--accent) 22%, transparent);
+    box-shadow: inset 2px 0 0 var(--accent);
+  }
+  .li-sel-primary .role-name,
+  .li-sel-primary .inv-name { font-weight: 700; }
+  .li-dim { opacity: 0.4; }
 
   .inv-name {
     font-weight: 500;
@@ -1208,14 +1238,17 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
      half-gap and holds there. Falls back to 1rem before/without JS. */
   .tl-detail {
     --tl-detail-w: 360px;
-    flex: 0 0 0; overflow: hidden;
+    flex: 0 0 0; overflow: hidden; margin-left: 0;
     position: sticky; top: calc(var(--tl-detail-top, 1rem) / 2); align-self: flex-start;
     max-height: calc(100vh - var(--tl-detail-top, 1rem) / 2 - 1rem);
-    transition: flex-basis 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    /* margin-left transitions in lockstep with flex-basis (and `main`'s width) so
+       the gap opens up alongside the panel without nudging the content's width. */
+    transition: flex-basis 0.55s cubic-bezier(0.4, 0, 0.2, 1), margin-left 0.55s cubic-bezier(0.4, 0, 0.2, 1);
   }
   /* Fixed px width (not %) so the main timeline boundary never moves when the
-     info tab's scrollbar appears/disappears or its content scrolls. */
-  .tl-detail.open { flex-basis: var(--tl-detail-w); border-left: 1px solid var(--border); }
+     info tab's scrollbar appears/disappears or its content scrolls. The left
+     margin sets the border line off the content by --tl-detail-gap. */
+  .tl-detail.open { flex-basis: var(--tl-detail-w); margin-left: var(--tl-detail-gap); border-left: 1px solid var(--border); }
   /* The info tab's OWN scroll — independent of the page and the timeline. When
      the details run long, they scroll inside this panel while the sticky column
      above keeps the info tab's top pinned to the viewport.
@@ -1354,8 +1387,8 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
 
     // `drawer` is the INFO TAB (the sliding detail panel); `drawerBody` is its
     // scrollable contents. See the .tl-detail CSS for the sticky/scroll setup.
-    const drawer = document.querySelector<HTMLElement>('.tl-detail')!;
-    const drawerBody = document.querySelector<HTMLElement>('.tl-detail-body')!;
+    const drawer = document.querySelector<HTMLElement>('.view-timeline .tl-detail')!;
+    const drawerBody = document.querySelector<HTMLElement>('.view-timeline .tl-detail-body')!;
     const rows = Array.from(document.querySelectorAll<HTMLElement>('.tl-row'));
 
     // --- selection state ---
@@ -1568,29 +1601,21 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
           el.style.top = (36 * lane + 4) + 'px';
           el.style.height = '28px';
           el.style.borderLeftColor = colorOf[it.type] || 'var(--border)';
-          // Organisation label on the bar. When the org has an explicit short
-          // form (entityShort differs from the full entity), it's compact enough
-          // to *lead* the bar as "Short Org · Role"; there the title surrenders
-          // width first (see .o.lead CSS). Otherwise the (long) org trails the
-          // title "space permitting", giving up width long before the title does.
+          // Organisation label trails the title "space permitting" as
+          // "Role · Org": the org's large flex-shrink (see .o CSS) makes it
+          // surrender width — and truncate — long before the title does. Prefer
+          // the compact short form when the org has one, else the full name.
           // Skipped entirely when the org would just echo the title
           // (projects/awards/etc. set entity = title).
-          const shortOrg = it.entityShort && it.entityShort !== it.entity && it.entityShort !== it.title ? it.entityShort : '';
-          const longOrg = !shortOrg && it.entity && it.entity !== it.title ? it.entity : '';
+          const org = it.entityShort && it.entityShort !== it.title ? it.entityShort
+            : (it.entity && it.entity !== it.title ? it.entity : '');
           el.addEventListener('click', () => selectItem(it));
           const span = document.createElement('span'); span.className = 't'; span.textContent = it.title;
-          if (shortOrg) {
-            el.title = `${shortOrg} · ${it.title} · ${it.dateLabel}`;
-            const osp = document.createElement('span'); osp.className = 'o lead'; osp.textContent = shortOrg;
+          el.title = `${it.title}${org ? ', ' + org : ''} · ${it.dateLabel}`;
+          el.appendChild(span);
+          if (org) {
+            const osp = document.createElement('span'); osp.className = 'o'; osp.textContent = org;
             el.appendChild(osp);
-            el.appendChild(span);
-          } else {
-            el.title = `${it.title}${longOrg ? ', ' + longOrg : ''} · ${it.dateLabel}`;
-            el.appendChild(span);
-            if (longOrg) {
-              const osp = document.createElement('span'); osp.className = 'o'; osp.textContent = longOrg;
-              el.appendChild(osp);
-            }
           }
           bars.appendChild(el);
         }
@@ -1607,6 +1632,115 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
     const chips = Array.from(document.querySelectorAll<HTMLElement>('.undated-item'));
     const bottomParaEls = Array.from(document.querySelectorAll<HTMLElement>('.undated-items'));
     const bottomGroupEls = Array.from(document.querySelectorAll<HTMLElement>('.undated'));
+
+    // --- list-view info tab -------------------------------------------------
+    // The list view gets the SAME sliding panel as the timeline, opened by
+    // clicking a list row. Each row carries a `data-li` id into the
+    // #tl-list-data dataset; selecting one builds the panel (reusing the .d-*
+    // styles + colorOf/labelOf) and lights every related row — same entity or a
+    // shared relation-group — dimming the rest, mirroring the timeline's
+    // selection emphasis. `ldDeselect` is exposed (no-op until wired) so the
+    // view switcher and Esc can close this tab too.
+    let ldDeselect = () => {};
+    const listDataEl = document.getElementById('tl-list-data');
+    const listDrawer = document.querySelector<HTMLElement>('.view-list .tl-detail');
+    const listDrawerBody = listDrawer?.querySelector<HTMLElement>('.tl-detail-body') ?? null;
+    if (listDataEl && listDrawer && listDrawerBody) {
+      interface LDetail {
+        id: number; title: string; type: string; dateLabel: string | null;
+        subtitle: string | null; description: string | null;
+        links: { label: string; url: string }[]; entity: string;
+        relationGroups: string[]; main: boolean;
+      }
+      const ldItems: LDetail[] = JSON.parse(listDataEl.textContent || '[]');
+      const ldById: Record<number, LDetail> = {};
+      for (const d of ldItems) ldById[d.id] = d;
+      const ldRows = Array.from(document.querySelectorAll<HTMLElement>('.view-list [data-li]'));
+      const ldRowById: Record<number, HTMLElement> = {};
+      for (const row of ldRows) ldRowById[parseInt(row.dataset.li!)] = row;
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      let ldSelected: number | null = null;
+
+      // Foreground = same organisation/entity, or a shared relation-group tag.
+      const ldForeground = (d: LDetail, sel: LDetail): boolean =>
+        d.entity === sel.entity ||
+        (sel.relationGroups.length > 0 && d.relationGroups.some(g => sel.relationGroups.includes(g)));
+
+      function ldApply() {
+        const sel = ldSelected !== null ? ldById[ldSelected] : null;
+        for (const row of ldRows) {
+          const d = ldById[parseInt(row.dataset.li!)];
+          if (!d) continue;
+          const primary = !!sel && d.id === sel.id;
+          const fg = !!sel && ldForeground(d, sel);
+          row.classList.toggle('li-sel-primary', primary);
+          row.classList.toggle('li-sel-related', !!sel && fg && !primary);
+          row.classList.toggle('li-dim', !!sel && !fg);
+        }
+      }
+
+      function ldBuild(d: LDetail) {
+        listDrawerBody!.innerHTML = '';
+        const h = document.createElement('h2'); h.className = 'd-title'; h.textContent = d.title;
+        const meta = document.createElement('div'); meta.className = 'd-meta';
+        const dot = document.createElement('span'); dot.className = 'd-dot'; dot.style.background = colorOf[d.type] || 'var(--border)';
+        const mt = document.createElement('span');
+        const lab = labelOf[d.type] || d.type;
+        mt.textContent = d.dateLabel ? `${lab} · ${d.dateLabel}` : lab;
+        meta.appendChild(dot); meta.appendChild(mt);
+        listDrawerBody!.appendChild(h); listDrawerBody!.appendChild(meta);
+        if (d.subtitle) { const s = document.createElement('div'); s.className = 'd-subtitle'; s.textContent = d.subtitle; listDrawerBody!.appendChild(s); }
+        if (d.description) { const p = document.createElement('p'); p.className = 'd-desc'; p.textContent = d.description; listDrawerBody!.appendChild(p); }
+        if (d.links.length) {
+          const wrap = document.createElement('div'); wrap.className = 'd-links';
+          for (const l of d.links) { const a = document.createElement('a'); a.href = l.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = l.label; wrap.appendChild(a); }
+          listDrawerBody!.appendChild(wrap);
+        }
+        // Related rows (same entity / shared relation-group), shown as the same
+        // compact vertical timeline the bar drawer uses; kept in list order.
+        const related = ldItems.filter(x => x.id !== d.id && ldForeground(x, d));
+        if (related.length) {
+          const rlab = document.createElement('div'); rlab.className = 'd-related-label'; rlab.textContent = 'Related';
+          const ul = document.createElement('ul'); ul.className = 'd-timeline';
+          for (const r of related) {
+            const li = document.createElement('li'); li.className = 'd-tl-item';
+            const rdot = document.createElement('span'); rdot.className = 'd-tl-dot'; rdot.style.background = colorOf[r.type] || 'var(--border)';
+            const btn = document.createElement('button'); btn.className = 'd-tl-link';
+            btn.addEventListener('click', () => ldSelect(r.id, { scroll: true }));
+            const t = document.createElement('span'); t.className = 'd-tl-title';
+            t.textContent = r.entity && r.entity !== r.title ? `${r.title} · ${r.entity}` : r.title;
+            btn.appendChild(t);
+            if (r.dateLabel) { const dt = document.createElement('span'); dt.className = 'd-tl-date'; dt.textContent = r.dateLabel; btn.appendChild(dt); }
+            if (r.description) { const ds = document.createElement('span'); ds.className = 'd-tl-desc'; ds.textContent = r.description; btn.appendChild(ds); }
+            li.appendChild(rdot); li.appendChild(btn); ul.appendChild(li);
+          }
+          listDrawerBody!.appendChild(rlab); listDrawerBody!.appendChild(ul);
+        }
+      }
+
+      function ldOpen() { listDrawer!.classList.add('open'); listDrawer!.setAttribute('aria-hidden', 'false'); }
+      function ldClose() { listDrawer!.classList.remove('open'); listDrawer!.setAttribute('aria-hidden', 'true'); }
+
+      function ldSelect(id: number, opts?: { scroll?: boolean }) {
+        if (ldSelected === id) { ldDeselect(); return; }   // clicking the open row closes it
+        const d = ldById[id]; if (!d) return;
+        ldSelected = id;
+        ldBuild(d); ldApply(); ldOpen();
+        if (opts?.scroll) ldRowById[id]?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+      }
+
+      ldDeselect = () => { if (ldSelected === null) return; ldSelected = null; ldApply(); ldClose(); };
+
+      for (const row of ldRows) {
+        const id = parseInt(row.dataset.li!);
+        row.addEventListener('click', () => ldSelect(id));
+        row.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); ldSelect(id); }
+        });
+      }
+      listDrawer.querySelector('.tl-detail-close')?.addEventListener('click', () => ldDeselect());
+    }
 
     // --- view switching (Timeline ⇄ Experience list) ---
     const viewButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.view-btn'));
@@ -1634,8 +1768,10 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
       });
       if (timelineView) { timelineView.hidden = !tlActive; timelineView.classList.toggle('active', tlActive); }
       if (listView) listView.hidden = tlActive;
-      if (!tlActive) deselect(); // close the drawer / clear selection when leaving the timeline
+      deselect();      // clear any timeline selection + close its info tab
+      ldDeselect();    // clear any list selection + close its info tab
       syncHash();
+      syncDetailTop(); // re-measure the now-visible layout for the sticky info tab
     }
 
     function setFilter(f: string) {
@@ -1671,18 +1807,23 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
       setFilter(f === currentFilter && f !== 'all' ? 'all' : f);
     }));
     viewButtons.forEach(btn => btn.addEventListener('click', () => setView(btn.dataset.view!)));
-    document.querySelector('.tl-detail-close')?.addEventListener('click', () => deselect());
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') deselect(); });
+    document.querySelector('.view-timeline .tl-detail-close')?.addEventListener('click', () => deselect());
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { deselect(); ldDeselect(); } });
 
     // Measure the gap above the info tab at rest — i.e. the page header (title +
     // view switch) that sits above .tl-layout — and expose it as --tl-detail-top.
     // The CSS shows that FULL gap when scrolled to the top and pins the tab at
     // HALF of it once it sticks (see the .tl-detail rule). Re-measure on resize
     // and once fonts load, since both can change the header's height.
-    const tlLayout = document.querySelector<HTMLElement>('.tl-layout')!;
+    // Both views host a .tl-layout (timeline + list); measure whichever is on
+    // screen and set the offset on <html> so BOTH info tabs inherit it (custom
+    // properties cascade) — each drawer then pins correctly under the header.
+    const tlLayouts = Array.from(document.querySelectorAll<HTMLElement>('.tl-layout'));
     function syncDetailTop() {
-      const top = tlLayout.getBoundingClientRect().top + window.scrollY;
-      drawer.style.setProperty('--tl-detail-top', `${Math.round(top)}px`);
+      const vis = tlLayouts.find(l => l.offsetParent !== null) ?? tlLayouts[0];
+      if (!vis) return;
+      const top = vis.getBoundingClientRect().top + window.scrollY;
+      document.documentElement.style.setProperty('--tl-detail-top', `${Math.round(top)}px`);
     }
     syncDetailTop();
     window.addEventListener('resize', syncDetailTop);
