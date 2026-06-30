@@ -13,6 +13,12 @@ export default defineConfig({
   redirects: {
     // The Timeline now lives as a view inside /experience; keep the old URL alive.
     '/timeline': '/experience',
+    // Projects/Publications/Blog listings merged into the tabbed /works page —
+    // forward the old standalone URLs to the matching tab. (Detail pages like
+    // /projects/<slug> and /blog/<slug> are unaffected.)
+    '/projects': '/works#projects',
+    '/publications': '/works#publications',
+    '/blog': '/works#blog',
     '/s': 'https://rotatingsandwiches.com',
     '/sand': 'https://rotatingsandwiches.com',
     '/sandwich': 'https://rotatingsandwiches.com',
