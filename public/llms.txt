@@ -6,6 +6,16 @@
 
 Anthony is a Master's student in Computer Science at Georgia Institute of Technology, where his research focuses on AI safety, interpretability, and observability. He works at the Human-Centered AI Lab (EILab) under Dr. Mark Riedl and PhD Candidate Glenn Matlin on persona vectors and humanistic modeling in LLMs. He is also a Lead Graduate TA for Algorithms (CS 3510).
 
+## Pages
+
+- [Home](https://zang.dev/) — overview and intro
+- [Works](https://zang.dev/works) — projects and writing, with a unified recent-activity feed (consolidates what were separate projects, publications, and blog pages)
+- [Experience](https://zang.dev/experience) — interactive career timeline, or the same affiliations grouped by organisation
+- [Contact](https://zang.dev/contact) — ways to get in touch
+- [Map](https://zang.dev/map) — states, provinces, and cities visited
+- [Fun Facts](https://zang.dev/fun-facts) — a small, growing collection of fun facts
+- [Favourite Internet Corners](https://zang.dev/favourites) — bookmarks worth sharing
+
 ## Education
 
 - Georgia Institute of Technology — MS Computer Science (Aug 2025 – present)
