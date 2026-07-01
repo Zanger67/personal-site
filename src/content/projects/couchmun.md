@@ -7,6 +7,6 @@ startDate: 2024-06-01
 tags: ["Svelte", "TypeScript", "Open Source"]
 affiliations: ["Georgia Tech Model United Nations"]
 pinned: true
-main: false
+main: true
 order: 1
 ---
