@@ -5,5 +5,6 @@ repo: "https://github.com/iiisong/ehrudite"
 startDate: 2024-02-01
 endDate: 2024-02-28
 tags: ["Python", "Pandas", "MySQL", "NLiDB"]
+relationGroups: ["hackathon"]
 order: 4
 ---
