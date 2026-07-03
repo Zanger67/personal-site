@@ -22,3 +22,6 @@ Thumbs.db
 # claude
 .claude/
 CLAUDE.md
+
+# local data archives (removed content kept for later reinstatement)
+*.archive.json
