@@ -1,5 +1,30 @@
 [
   {
+    "organization": "Applied Intuition",
+    "organizationShort": null,
+    "url": "https://www.appliedintuition.com/",
+    "location": "Sunnyvale, California",
+    "categories": ["work"],
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": [],
+    "membership": null,
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Engineering",
+        "roleDetail": "Incoming member of engineering",
+        "start": "2026-08",
+        "end": null,
+        "main": true,
+        "homepage": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
     "organization": "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech",
     "organizationShort": "EI/HCAI Lab, Georgia Tech",
     "url": "https://eilab.gatech.edu/",
