@@ -13,7 +13,7 @@
     "roles": [
       {
         "role": "Engineering",
-        "roleDetail": "Incoming member of engineering",
+        "roleDetail": null,
         "start": "2026-08",
         "end": null,
         "main": true,
