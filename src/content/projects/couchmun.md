@@ -11,7 +11,7 @@ features: []
 tags: ["Svelte", "TypeScript", "Open Source"]
 affiliations: ["Georgia Tech Model United Nations"]
 collaborators: []
-relationGroups: ["projects"]
+relationGroups: []
 pinned: true
 main: true
 order: 1

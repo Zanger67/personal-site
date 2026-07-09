@@ -11,7 +11,7 @@ features: []
 tags: ["Python", "GitHub Actions", "GraphQL"]
 affiliations: []
 collaborators: []
-relationGroups: ["projects"]
+relationGroups: []
 pinned: false
 main: false
 order: 5

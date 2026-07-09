@@ -11,7 +11,7 @@ features: []
 tags: ["Python", "OpenAI API", "AST"]
 affiliations: []
 collaborators: []
-relationGroups: ["projects"]
+relationGroups: []
 pinned: false
 main: false
 order: 6

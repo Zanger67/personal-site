@@ -11,7 +11,7 @@ features: []
 tags: ["Python", "OpenAI API", "Simulations"]
 affiliations: []
 collaborators: []
-relationGroups: ["projects"]
+relationGroups: []
 pinned: true
 main: false
 order: 2
