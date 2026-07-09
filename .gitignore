@@ -23,5 +23,13 @@ Thumbs.db
 .claude/
 CLAUDE.md
 
-# local data archives (removed content kept for later reinstatement)
-*.archive.json
+# src/dev — git-ignored scratch, archive & proofing area (see src/dev/README.md).
+# Mirrors src/data & src/content; only the README and .gitkeep markers are tracked.
+/src/dev/*
+!/src/dev/README.md
+!/src/dev/content/
+!/src/dev/data/
+/src/dev/content/*
+!/src/dev/content/.gitkeep
+/src/dev/data/*
+!/src/dev/data/.gitkeep

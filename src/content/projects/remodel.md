@@ -1,10 +1,18 @@
 ---
 title: "reModel"
 description: "Room redesigner that takes an image of an existing room and redecorates it with real-life products using YOLOv8, SAM, and CLIP."
-repo: "https://github.com/iiisong/reModel"
+role: null
 startDate: 2025-02-01
 endDate: 2025-02-28
-tags: ["Python", "YOLOv8", "CLIP", "Computer Vision"]
+url: null
+repo: "https://github.com/iiisong/reModel"
+urls: []
+features: []
+tags: ["Hackathon", "Python", "YOLOv8", "CLIP", "Computer Vision"]
+affiliations: ["Hackalytics 2025"]
+collaborators: ["isaac-song"]
 relationGroups: ["hackathon"]
+pinned: false
+main: false
 order: 3
 ---

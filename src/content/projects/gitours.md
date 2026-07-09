@@ -1,10 +1,18 @@
 ---
 title: "Gitours"
 description: "Proof-of-concept using LLMs for code and repository observability, analysis, and onboarding."
-repo: "https://github.com/Zanger67/gitours"
+role: null
 startDate: 2025-02-01
 endDate: 2025-04-01
+url: null
+repo: "https://github.com/Zanger67/gitours"
+urls: []
+features: []
 tags: ["Python", "OpenAI API", "AST"]
-affiliations: ["HCAI"]
+affiliations: []
+collaborators: []
+relationGroups: ["projects"]
+pinned: false
+main: false
 order: 6
 ---
