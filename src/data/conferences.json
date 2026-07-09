@@ -1,10 +1,28 @@
 [
   {
+    "name": "DASH 2025 by Datadog",
+    "role": "Volunteer Organiser",
+    "url": "https://dash.datadoghq.com/",
+    "location": "New York, NY",
+    "date": "2025-06",
+    "description": null,
+    "urls": [],
+    "features": [],
+    "affiliations": ["Datadog"],
+    "relationGroups": [],
+    "main": false
+  },
+  {
     "name": "Supercomputing Conference '24",
+    "role": null,
     "url": "https://sc24.supercomputing.org/",
     "location": "Atlanta, GA",
     "date": "2024-11",
     "description": "Attended as a representative of Georgia Tech's Team Phoenix supercomputing team. November 17–22, 2024.",
-    "relationGroups": ["team-phoenix"]
+    "urls": [],
+    "features": [],
+    "affiliations": ["Team Phoenix Supercomputing Lab VIP, Georgia Tech"],
+    "relationGroups": ["team-phoenix"],
+    "main": false
   }
 ]
