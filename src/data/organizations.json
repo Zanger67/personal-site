@@ -108,15 +108,30 @@
     "main": false,
     "relationGroups": [],
     "membership": {
-      "start": null,
+      "start": "2022-09",
+      "end": "2025-05",
+      "description": null,
+      "url": null
+    },
+    "alumnus": {
+      "start": "2025-05",
       "end": null,
       "description": null,
       "url": null
     },
-    "alumnus": null,
     "roles": [
       {
         "role": "Webmaster",
+        "roleDetail": null,
+        "start": null,
+        "end": null,
+        "main": false,
+        "description": null,
+        "url": null,
+        "location": null
+      },
+      {
+        "role": "Contrabass",
         "roleDetail": null,
         "start": null,
         "end": null,
@@ -164,13 +179,29 @@
     "main": false,
     "relationGroups": [],
     "membership": {
-      "start": null,
+      "start": "2024-09",
+      "end": "2025-05",
+      "description": null,
+      "url": null
+    },
+    "alumnus": {
+      "start": "2025-05",
       "end": null,
       "description": null,
       "url": null
     },
-    "alumnus": null,
-    "roles": []
+    "roles": [
+      {
+        "role": "Contrabass",
+        "roleDetail": null,
+        "start": null,
+        "end": null,
+        "main": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
   },
   {
     "organization": "GT Motor Sports FSAE",
@@ -187,7 +218,18 @@
       "url": null
     },
     "alumnus": null,
-    "roles": []
+    "roles": [
+      {
+        "role": "Business team",
+        "roleDetail": null,
+        "start": null,
+        "end": null,
+        "main": false,
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
   },
   {
     "organization": "GT Supercomputing Club",
