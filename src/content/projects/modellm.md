@@ -8,7 +8,7 @@ url: null
 repo: "https://github.com/Zanger67/ModeLLM"
 urls: []
 features: []
-tags: ["Python", "OpenAI API", "Simulations"]
+tags: ["Python", "Simulations"]
 affiliations: []
 collaborators: []
 relationGroups: []

@@ -164,7 +164,12 @@
         "main": true,
         "homepage": false,
         "description": "Intern on the RAPID Workloads team -- Rapid API Deployment.",
-        "url": null
+        "url": null,
+        "urls": [
+          { "url": "https://github.com/dd-anthonyzang?tab=overview&from=2025-08-01" }
+        ],
+        "features": [],
+        "location": null
       }
     ]
   },

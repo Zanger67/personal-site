@@ -8,7 +8,7 @@ url: null
 repo: "https://github.com/Zanger67/gitours"
 urls: []
 features: []
-tags: ["Python", "OpenAI API", "AST"]
+tags: ["Python"]
 affiliations: []
 collaborators: []
 relationGroups: []
