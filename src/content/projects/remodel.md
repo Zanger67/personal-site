@@ -8,6 +8,7 @@ url: null
 repo: "https://github.com/iiisong/reModel"
 urls: []
 features: []
+metrics: {}
 tags: ["Hackathon", "Python", "YOLOv8", "CLIP", "Segment Everything"]
 affiliations: ["Hackalytics 2025"]
 collaborators: ["isaac-song"]

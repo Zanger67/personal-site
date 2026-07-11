@@ -6,7 +6,8 @@
     "start": "2025-08",
     "end": "2026-05",
     "url": "https://gatech.edu",
-    "main": true
+    "main": true,
+    "metrics": {}
   },
   {
     "institution": "Georgia Institute of Technology",
@@ -16,6 +17,7 @@
     "end": "2025-05",
     "honors": "Highest Honours",
     "url": "https://gatech.edu",
-    "main": true
+    "main": true,
+    "metrics": {}
   }
 ]

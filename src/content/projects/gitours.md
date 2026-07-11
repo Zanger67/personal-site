@@ -8,6 +8,7 @@ url: null
 repo: "https://github.com/Zanger67/gitours"
 urls: []
 features: []
+metrics: {}
 tags: ["Python"]
 affiliations: []
 collaborators: []

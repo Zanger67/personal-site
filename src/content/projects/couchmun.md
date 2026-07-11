@@ -8,6 +8,7 @@ url: "https://couchmun.com/"
 repo: "https://github.com/gtmun/couchmun"
 urls: []
 features: []
+metrics: {}
 tags: ["Svelte", "TypeScript", "Open Source"]
 affiliations: ["Georgia Tech Model United Nations"]
 collaborators: []

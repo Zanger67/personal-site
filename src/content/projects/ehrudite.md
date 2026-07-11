@@ -8,6 +8,7 @@ url: null
 repo: "https://github.com/iiisong/ehrudite"
 urls: []
 features: []
+metrics: {}
 tags: ["Hackathon", "Python", "RAG", "SQL", "NLiDB", "Pandas"]
 affiliations: ["Hackalytics 2024"]
 collaborators: ["isaac-song"]

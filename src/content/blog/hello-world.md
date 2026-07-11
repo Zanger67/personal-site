@@ -10,6 +10,7 @@ affiliations: []
 collaborators: []
 urls: []
 features: []
+metrics: {}
 ---
 
 First blog post. Unsure what I'll post about, and if I'll post. Perhaps more to come?

@@ -10,6 +10,7 @@
     "features": [],
     "affiliations": ["Datadog"],
     "relationGroups": [],
+    "metrics": {},
     "main": false
   },
   {
@@ -23,6 +24,7 @@
     "features": [],
     "affiliations": ["Team Phoenix Supercomputing Lab VIP, Georgia Tech"],
     "relationGroups": ["team-phoenix"],
+    "metrics": {},
     "main": false
   }
 ]

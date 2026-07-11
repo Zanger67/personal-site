@@ -8,6 +8,7 @@ url: null
 repo: "https://github.com/Zanger67/WikiLeet"
 urls: []
 features: []
+metrics: {}
 tags: ["Python", "GitHub Actions", "GraphQL"]
 affiliations: []
 collaborators: []

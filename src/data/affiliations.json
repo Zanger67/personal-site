@@ -8,6 +8,7 @@
     "displayTimeline": true,
     "main": false,
     "relationGroups": ["industry"],
+    "metrics": {},
     "membership": null,
     "alumnus": null,
     "roles": [
@@ -37,6 +38,7 @@
     "displayTimeline": true,
     "main": true,
     "relationGroups": [],
+    "metrics": {},
     "alumnus": null,
     "roles": [
       {
@@ -61,6 +63,7 @@
     "displayTimeline": true,
     "main": false,
     "relationGroups": ["aisi"],
+    "metrics": {},
     "membership": {
       "start": "2025-08",
       "end": "2026-05",
@@ -97,6 +100,7 @@
     "displayTimeline": true,
     "main": false,
     "relationGroups": [],
+    "metrics": {},
     "alumnus": null,
     "roles": [
       {
@@ -154,6 +158,7 @@
     "displayTimeline": true,
     "main": false,
     "relationGroups": ["industry"],
+    "metrics": {},
     "alumnus": null,
     "roles": [
       {
@@ -182,6 +187,7 @@
     "displayTimeline": true,
     "main": false,
     "relationGroups": [],
+    "metrics": {},
     "membership": null,
     "alumnus": null,
     "roles": [
@@ -207,6 +213,7 @@
     "displayTimeline": true,
     "main": false,
     "relationGroups": ["team-phoenix"],
+    "metrics": {},
     "membership": null,
     "alumnus": null,
     "roles": [
