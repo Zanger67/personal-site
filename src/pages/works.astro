@@ -356,6 +356,7 @@ const activeId = tabs[0]?.id ?? null;
         const id = t.dataset.tab!;
         activate(id);
         history.replaceState(null, '', `#${id}`);
+        window.trackEvent?.(`Works tab: ${t.textContent?.trim() || id}`);
       });
     });
 

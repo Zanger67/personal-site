@@ -2083,6 +2083,7 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
       openDrawer(it, preferTab); // every item opens the info tab — even sparse ones show title/category/related
       if (opts?.scroll) scrollToItem(it);
       if (!restoring && opts?.history !== 'none') syncHistory('push');
+      if (!restoring) window.trackEvent?.('Experience: ' + (it.entity && it.entity !== it.title ? it.entity + ' — ' + it.title : it.title));
     }
     function deselect(opts?: { history?: 'push' | 'none' }) {
       const wasSelected = selectedId !== null;
@@ -2285,6 +2286,7 @@ const cfg = { categories: CATEGORIES, typeOrder: TYPE_ORDER, summerCols: SUMMER_
         ldBuild(d); ldApply(); ldOpen();
         if (opts?.scroll) ldRowById[id]?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
         if (!restoring && opts?.history !== 'none') syncHistory('push');
+        if (!restoring) window.trackEvent?.('Experience: ' + (d.entity && d.entity !== d.title ? d.entity + ' — ' + d.title : d.title));
       }
 
       ldDeselect = (opts?: { history?: 'push' | 'none' }) => {

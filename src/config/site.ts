@@ -100,6 +100,20 @@ export function showHomeSection(id: HomeSectionId): boolean {
   return homeSections[id];
 }
 
+// Analytics — GoatCounter (privacy-first, cookieless). When `goatCounter` is a
+// non-null endpoint, BaseLayout loads the counter (page views + referrers +
+// country geography) and exposes `window.trackEvent(path, title)` so pages can
+// record custom in-page events (experience item selection, Works tab switches,
+// outbound clicks). The template keeps this null, so no script is emitted there.
+export const analytics: { goatCounter: string | null } = {
+  goatCounter: 'https://zang.goatcounter.com/count',
+};
+
+/** GoatCounter data endpoint when analytics is enabled, else null. */
+export function goatCounterEndpoint(): string | null {
+  return analytics.goatCounter;
+}
+
 // Experience-page timeline behaviour.
 export const timeline = {
   // Future-dated entries — whose start MONTH is later than the current month —
