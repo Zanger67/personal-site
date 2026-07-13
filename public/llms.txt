@@ -54,3 +54,7 @@ Anthony is a Master's student in Computer Science at Georgia Institute of Techno
 - LinkedIn: https://linkedin.com/in/zang
 - Email: azang3@gatech.edu
 - Twitter: https://twitter.com/anthonywzang
+
+## Colophon
+
+Made with Anthony Zang's open-source personal-site template: https://github.com/Zanger67/personal-site-template
