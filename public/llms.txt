@@ -48,6 +48,16 @@ Anthony is a Master's student in Computer Science at Georgia Institute of Techno
 - Yellow Jacket Fencing Club
 - GT Gold Fellas — Organiser
 
+## Projects
+
+- [CouchMUN](https://zang.dev/projects/couchmun) — Open-source, locally run chairing platform for Model United Nations conferences. Deployed at conferences totaling 2,500+ participants.
+- [ModeLLM](https://zang.dev/projects/modellm) — Analysis of LLM performances in simulated Model UN diplomacy contexts across 24 simulations with models from OpenAI, Anthropic, DeepSeek, and Meta.
+- [Gitours](https://zang.dev/projects/gitours) — Proof-of-concept using LLMs for code and repository observability, analysis, and onboarding.
+- [reModel](https://zang.dev/projects/remodel) — Room redesigner that takes an image of an existing room and redecorates it with real-life products using YOLOv8, SAM, and CLIP.
+- [Personal Website](https://zang.dev/projects/personal-website) — Personal site built on a from-scratch, open-source template (Astro/TypeScript); a fun way to tinker with frontend.
+- [WikiLeet](https://zang.dev/projects/wikileet) — GitHub Marketplace composite action to generate link-consistent wikis of a user's LeetCode solutions.
+- [EHRudite](https://zang.dev/projects/ehrudite) — NLIDB platform for MIMIC-III clinical data, transforming English statements by medical professionals into precise MySQL queries via a pseudo-RAG pipeline.
+
 ## Links
 
 - GitHub: https://github.com/Zanger67
