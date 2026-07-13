@@ -6,6 +6,8 @@ startDate: 2024-02-01
 endDate: 2024-02-28
 url: null
 repo: "https://github.com/iiisong/ehrudite"
+template: null
+sample: null
 urls: []
 features: []
 metrics: {}

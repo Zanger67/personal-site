@@ -6,6 +6,8 @@ startDate: 2025-02-01
 endDate: 2025-02-28
 url: null
 repo: "https://github.com/iiisong/reModel"
+template: null
+sample: null
 urls: []
 features: []
 metrics: {}

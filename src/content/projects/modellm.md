@@ -6,6 +6,8 @@ startDate: 2025-03-01
 endDate: 2025-05-01
 url: null
 repo: "https://github.com/Zanger67/ModeLLM"
+template: null
+sample: null
 urls: []
 features: []
 metrics: {}

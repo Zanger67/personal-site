@@ -6,6 +6,8 @@ startDate: 2024-05-01
 endDate: 2024-07-01
 url: null
 repo: "https://github.com/Zanger67/WikiLeet"
+template: null
+sample: null
 urls: []
 features: []
 metrics: {}

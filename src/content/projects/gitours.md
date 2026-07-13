@@ -6,6 +6,8 @@ startDate: 2025-02-01
 endDate: 2025-04-01
 url: null
 repo: "https://github.com/Zanger67/gitours"
+template: null
+sample: null
 urls: []
 features: []
 metrics: {}

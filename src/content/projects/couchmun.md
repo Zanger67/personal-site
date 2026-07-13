@@ -6,6 +6,8 @@ startDate: 2024-06-01
 endDate: null
 url: "https://couchmun.com/"
 repo: "https://github.com/gtmun/couchmun"
+template: null
+sample: null
 urls: []
 features: []
 metrics: {}
