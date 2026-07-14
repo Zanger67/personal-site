@@ -18,7 +18,7 @@
         "start": "2026-08",
         "end": null,
         "main": true,
-        "homepage": false,
+        "homepage": true,
         "description": null,
         "url": null,
         "location": null
