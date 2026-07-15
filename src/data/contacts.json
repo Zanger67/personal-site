@@ -1,7 +1,16 @@
 [
   {
+    "label": "Email",
+    "email": { "u": "bXpmdGF6a2lsbXpz", "d": "c3ltdXg=", "t": "b2F5" }
+  },
+  {
     "label": "Georgia Tech Email",
-    "value": "azang3 [at] gatech [dot] edu"
+    "email": { "u": "bWxtenMz", "d": "c21mcW90", "t": "cXBn" }
+  },
+  {
+    "label": "Book a Call",
+    "url": "https://cal.com/zangy",
+    "display": "cal.com/zangy"
   },
   {
     "label": "LinkedIn",
