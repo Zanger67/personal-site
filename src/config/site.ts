@@ -100,6 +100,18 @@ export function showHomeSection(id: HomeSectionId): boolean {
   return homeSections[id];
 }
 
+// Homepage "Research Friends" (Misc.) block display options.
+export const friends = {
+  // Render only each friend's first name (the first word of their registry
+  // display-name) instead of their full name. Flip off to show full names.
+  firstNameOnly: true,
+} as const;
+
+/** Should the friends block show first names only? */
+export function friendsFirstNameOnly(): boolean {
+  return friends.firstNameOnly;
+}
+
 // Analytics — GoatCounter (privacy-first, cookieless). When `goatCounter` is a
 // non-null endpoint, BaseLayout loads the counter (page views + referrers +
 // country geography) and exposes `window.trackEvent(path, title)` so pages can
