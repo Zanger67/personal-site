@@ -1,15 +1,15 @@
 # Anthony Zang
 
-> Personal site of Anthony Zang — MS CS student at Georgia Tech, AI safety researcher.
+> Personal site of Anthony Zang — MS CS @ Georgia Tech, AI safety research.
 
 ## About
 
-Anthony is a Master's student in Computer Science at Georgia Institute of Technology, where his research focuses on AI safety, interpretability, and observability. He works at the Human-Centered AI Lab (EILab) under Dr. Mark Riedl and PhD Candidate Glenn Matlin on persona vectors and humanistic modeling in LLMs. He is also a Lead Graduate TA for Algorithms (CS 3510).
+Anthony is a computer scientist and AI-safety researcher whose work centres on AI safety, interpretability, and observability. He earned his MS in Computer Science at the Georgia Institute of Technology (Aug 2025 – May 2026) and his BS in Computer Science there (Highest Honours). He is currently an AI Research Engineer (contract) at Redwood Research and an AI Researcher at Georgia Tech's Entertainment Intelligence & Human-Centered AI Lab (EI/HCAI Lab), and joins Applied Intuition as an engineer in August 2026. He previously interned on the backend & infrastructure team at Datadog, was a Technical Fellow with the AI Safety Initiative at Georgia Tech, and has served as a Lead Graduate TA for Algorithms (CS 3510) and Head TA for Discrete Mathematics (CS 2050).
 
 ## Pages
 
 - [Home](https://zang.dev/) — overview and intro
-- [Works](https://zang.dev/works) — projects and writing, with a unified recent-activity feed (consolidates what were separate projects, publications, and blog pages)
+- [Works](https://zang.dev/works) — projects and writing in one unified recent-activity feed (consolidates what were separate projects, publications, and blog pages)
 - [Experience](https://zang.dev/experience) — interactive career timeline, or the same affiliations grouped by organisation
 - [Contact](https://zang.dev/contact) — ways to get in touch
 - [Map](https://zang.dev/map) — states, provinces, and cities visited
@@ -18,35 +18,36 @@ Anthony is a Master's student in Computer Science at Georgia Institute of Techno
 
 ## Education
 
-- Georgia Institute of Technology — MS Computer Science (Aug 2025 – present)
-- Georgia Institute of Technology — BS Computer Science (Aug 2021 – May 2025), Highest Honours
+- Georgia Institute of Technology — MS Computer Science (Aug 2025 – May 2026)
+- Georgia Institute of Technology — BS Computer Science (Aug 2022 – May 2025), Highest Honours
 
 ## Current Affiliations
 
-- Human-Centered AI Lab, Georgia Tech — Student Researcher (Sep 2025 – present)
-- College of Computing, Georgia Tech — Lead Graduate Teaching Assistant of Algorithms, CS 3510 (Aug 2025 – present)
+- Redwood Research — AI Research Engineer, contract (Mar 2026 – present)
+- Entertainment Intelligence & Human-Centered AI Lab (EI/HCAI Lab), Georgia Tech — AI Researcher (Sep 2025 – present)
+- Applied Intuition — Engineering (incoming, starts Aug 2026)
 
 ## Past Affiliations
 
+- AI Safety Initiative at Georgia Tech — Technical Fellow (Aug 2025 – Dec 2025); now alumnus
+- College of Computing, Georgia Tech — Lead Graduate Teaching Assistant of Algorithms, CS 3510 (Aug 2025 – May 2026); Head, Senior & Undergraduate TA of Discrete Mathematics, CS 2050 (Jan 2023 – May 2025)
 - Datadog — Backend & Infrastructure Software Engineering Intern (May 2025 – Aug 2025)
-- DDiSL Lab, Georgia Tech (Dr. Ling Liu) — Student Researcher & Team Lead (Sep 2025 – Dec 2025)
-- College of Computing, Georgia Tech — Head TA of Discrete Mathematics, CS 2050 (Jan 2024 – May 2025)
-- College of Computing, Georgia Tech — Senior TA of Discrete Mathematics, CS 2050 (Aug 2023 – Dec 2023)
-- College of Computing, Georgia Tech — Undergraduate TA of Discrete Mathematics, CS 2050 (Jan 2023 – Aug 2023)
+- Advised Research under Dr. Ling Liu (DDiSL Lab, Georgia Tech) — Student Researcher & Team Lead (Sep 2025 – Dec 2025)
 - Team Phoenix Supercomputing Lab VIP, Georgia Tech — Student Researcher (Jan 2024 – May 2025)
 
 ## Involvements
 
-- AI Safety Initiative at Georgia Tech — Technical Fellow
 - GT Model United Nations — Treasurer & Conference VP
 - GT International Ambassadors — Outreach & Finance
 - GT Glee Club — Webmaster
 - GT Pi Epsilon Phi — Treasurer
 - GT Chamber Choir
-- GT Motor Sports FSAE
+- GT Motor Sports FSAE — Business Team
+- GT Supercomputing Club
 - GT Seek Discomfort
 - Yellow Jacket Fencing Club
 - GT Gold Fellas — Organiser
+- SHAD Canada — Alumnus
 
 ## Projects
 
@@ -62,8 +63,10 @@ Anthony is a Master's student in Computer Science at Georgia Institute of Techno
 
 - GitHub: https://github.com/Zanger67
 - LinkedIn: https://linkedin.com/in/zang
-- Email: azang3@gatech.edu
-- Twitter: https://twitter.com/anthonywzang
+- Twitter/X: https://twitter.com/anthonywzang
+- Hugging Face: https://huggingface.co/zangydev
+- Book a call: https://cal.com/zangy
+- Contact / email: https://zang.dev/contact
 
 ## Colophon
 
