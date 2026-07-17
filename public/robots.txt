@@ -21,5 +21,3 @@ Disallow: /
 
 User-agent: ClaudeBot
 Disallow: /
-
-Sitemap: https://example.com/sitemap-index.xml
