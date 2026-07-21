@@ -13,11 +13,28 @@
 // linked to `url`; an unmatched reference renders unlinked, its slug humanized
 // back to a readable label ("buzz-jr" → "Buzz Jr").
 import collaborators from '../data/collaborators.json';
+import profile from '../data/profile.json';
 
 export interface CollaboratorInfo {
   'display-name'?: string | null;
   url?: string | null;
   urls?: Record<string, string> | null;
+  // Optional PROFILE fields — surfaced on the /collaborators page (see people.ts):
+  //   • affiliations — the person's institutional affiliations (a bare name, or a
+  //     { name, url } for a linked one). Shown as muted text next to their name.
+  //   • years — manual year/range specs ("2019", "2022–2024", "2024–present") that
+  //     feed the aggregated year label + sort alongside their dated works/roles.
+  //     Lets a profile-only person (no shared works) still carry a timeframe.
+  //   • listed — include this person on the /collaborators page. OPT-IN: defaults to
+  //     false, so a profile shows there only when explicitly `true` (always write it
+  //     out rather than leaning on the default). Listing switch only — it does not
+  //     change how the person renders anywhere else on the site.
+  affiliations?: (string | { name: string; url?: string | null })[] | null;
+  years?: string[] | null;
+  //   • priority — manual rank that BREAKS TIES in the /collaborators ordering; LOWER
+  //     shows first (0 before 2), default 0. Does not override the most-recent-first sort.
+  listed?: boolean | null;
+  priority?: number | null;
 }
 export interface Person {
   name: string;                  // display name (registry `display-name`, else humanized ref)
@@ -41,13 +58,28 @@ export function slugify(name: string): string {
 
 // Fallback label for a reference with no registry entry: an already-readable name
 // (has spaces/caps/punctuation) is shown as-is; a bare slug is title-cased.
-function fallbackName(ref: string): string {
+export function fallbackName(ref: string): string {
   if (/[^a-z0-9-]/.test(ref)) return ref;
   return ref.split('-').filter(Boolean).map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
 }
 
-export function resolvePeople(refs?: string[] | null): Person[] {
-  return (refs ?? []).map(ref => {
+// Who is "me". `profile.self` is the canonical owner slug; the display name and full
+// name slugify in as aliases, so a self-reference written any of those ways resolves.
+const selfSlugs = new Set(
+  [(profile as any).self, (profile as any).name, (profile as any).fullName]
+    .filter(Boolean)
+    .map((s: string) => slugify(s)),
+);
+export const isSelfSlug = (slug: string): boolean => selfSlugs.has(slug);
+
+// `excludeSelf` drops me from the result — that's what the "Collaborators" line on a
+// project or blog post wants, since it credits the OTHER people. Author lists keep me
+// in (publications, and the /collaborators page's author lines), so it defaults off.
+export function resolvePeople(refs?: string[] | null, opts?: { excludeSelf?: boolean }): Person[] {
+  const list = opts?.excludeSelf
+    ? (refs ?? []).filter(r => !isSelfSlug(slugify(r)))
+    : (refs ?? []);
+  return list.map(ref => {
     const info = registry[slugify(ref)];
     return {
       name: (info && info['display-name']) || fallbackName(ref),
@@ -55,4 +87,19 @@ export function resolvePeople(refs?: string[] | null): Person[] {
       urls: (info && info.urls) || {},
     };
   });
+}
+
+// Like resolvePeople but for a single ref and it KEEPS the registry slug — the
+// stable identity the /collaborators page groups + self-matches on (a display
+// name alone can't be a grouping key). `slug` is idempotent: a ref written as a
+// name or as a slug resolves to the same entry.
+export function resolvePerson(ref: string): Person & { slug: string } {
+  const slug = slugify(ref);
+  const info = registry[slug];
+  return {
+    slug,
+    name: (info && info['display-name']) || fallbackName(ref),
+    url: (info && info.url) || null,
+    urls: (info && info.urls) || {},
+  };
 }

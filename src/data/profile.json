@@ -1,6 +1,7 @@
 {
   "name": "Anthony Zang",
   "fullName": "Anthony Zang",
+  "self": "anthony-zang",
   "description": "Anthony Zang — MS CS @ Georgia Tech, AI safety research.",
   "homeTitle": "Anthony Zang",
   "greeting": "Allô! I'm Anthony.",
@@ -17,6 +18,7 @@
     "publications": "Selected publications and research.",
     "contact": "Get in touch with Anthony.",
     "experience": "Current and past affiliations, shown as an interactive timeline or an organisation-grouped list.",
+    "collaborators": "People I’ve collaborated with across projects, research, and posts — expand a name to see what we worked on together.",
     "blog": "Thoughts and notes.",
     "favourites": "A small, growing list of corners of the web worth bookmarking.",
     "funFacts": "A small, growing collection of fun facts."
