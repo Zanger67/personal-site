@@ -238,5 +238,23 @@
     "years": [],
     "listed": true,
     "priority": 3
+  },
+  "andrew-wei": {
+    "display-name": "Andrew Wei",
+    "url": "https://andrewwei.info/",
+    "urls": {
+      "LinkedIn": "https://www.linkedin.com/in/andrew-j-wei/",
+      "Twitter": "https://x.com/mirabile__visu"
+    },
+    "affiliations": [
+      "Undergrad @ Georgia Tech",
+      "AI Safety Initiative @ Georgia Tech",
+      "ERA Research Fellow",
+      "SPAR Research Fellow",
+      "Astra Fellow"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
   }
 }
