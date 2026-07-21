@@ -13,7 +13,7 @@ features: []
 metrics: {}
 tags: ["Python", "Simulations"]
 affiliations: []
-collaborators: []
+collaborators: ["anthony-zang", "isaac-song", "richard-nguyen", "seungtaek-lee"]
 relationGroups: []
 pinned: true
 main: false

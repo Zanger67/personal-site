@@ -9,6 +9,7 @@
     "main": false,
     "relationGroups": ["industry"],
     "metrics": {},
+    "collaborators": [],
     "membership": null,
     "alumnus": null,
     "roles": [
@@ -19,6 +20,7 @@
         "end": null,
         "main": true,
         "homepage": true,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
@@ -35,6 +37,7 @@
     "main": true,
     "relationGroups": ["aisi", "industry"],
     "metrics": {},
+    "collaborators": [],
     "membership": null,
     "alumnus": null,
     "roles": [
@@ -45,6 +48,7 @@
         "end": null,
         "main": true,
         "homepage": true,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null,
@@ -66,6 +70,9 @@
     "main": true,
     "relationGroups": [],
     "metrics": {},
+    "collaborators": [
+      { "slug": "mark-riedl", "role": "PI", "start": "2026-01", "end": null }
+    ],
     "alumnus": null,
     "roles": [
       {
@@ -76,6 +83,7 @@
         "main": true,
         "homepage": true,
         "homepage_org_name": "EI/HCAI Lab, Georgia Tech",
+        "collaborators": [],
         "description": null,
         "url": null
       }
@@ -91,6 +99,7 @@
     "main": false,
     "relationGroups": ["aisi"],
     "metrics": {},
+    "collaborators": [],
     "membership": {
       "start": "2025-08",
       "end": "2026-05",
@@ -112,6 +121,7 @@
         "end": "2025-12",
         "main": true,
         "homepage": true,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
@@ -128,6 +138,13 @@
     "main": false,
     "relationGroups": [],
     "metrics": {},
+    "collaborators": [
+      { "slug": "will-perkins", "role": "Professor of CS 3510", "start": "2026-01", "end": "2026-05" },
+      { "slug": "gerandy-brito", "role": "Professor of CS 3510", "start": "2025-08", "end": "2025-12" },
+      { "slug": "gerandy-brito", "role": "Professor of CS 2050", "start": "2023-01", "end": "2025-05" },
+      { "slug": "ronnie-howard", "role": "Professor of CS 2050", "start": "2023-01", "end": "2025-05" },
+      { "slug": "frederic-faulkner", "role": "Professor of CS 2050", "start": "2023-01", "end": "2023-05" }
+    ],
     "alumnus": null,
     "roles": [
       {
@@ -137,6 +154,7 @@
         "end": "2026-05",
         "main": false,
         "homepage": false,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
@@ -148,6 +166,7 @@
         "end": "2025-05",
         "main": false,
         "homepage": false,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
@@ -159,6 +178,7 @@
         "end": "2023-12",
         "main": false,
         "homepage": false,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
@@ -170,6 +190,7 @@
         "end": "2023-08",
         "main": false,
         "homepage": false,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
@@ -186,6 +207,7 @@
     "main": false,
     "relationGroups": ["industry"],
     "metrics": {},
+    "collaborators": [],
     "alumnus": null,
     "roles": [
       {
@@ -195,6 +217,7 @@
         "end": "2025-08",
         "main": true,
         "homepage": false,
+        "collaborators": [],
         "description": "Intern on the RAPID Workloads team -- Rapid API Deployment.",
         "url": null,
         "urls": [
@@ -215,6 +238,9 @@
     "main": false,
     "relationGroups": [],
     "metrics": {},
+    "collaborators": [
+      { "slug": "ling-liu", "role": "Research Mentor", "start": "2025-08", "end": "2025-12" }
+    ],
     "membership": null,
     "alumnus": null,
     "roles": [
@@ -225,6 +251,7 @@
         "end": "2025-12",
         "main": false,
         "homepage": false,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
@@ -241,6 +268,9 @@
     "main": false,
     "relationGroups": ["team-phoenix"],
     "metrics": {},
+    "collaborators": [
+      { "slug": "rich-vuduc", "role": "PI", "start": "2024-01", "end": "2025-05" }
+    ],
     "membership": null,
     "alumnus": null,
     "roles": [
@@ -251,6 +281,7 @@
         "end": "2025-05",
         "main": false,
         "homepage": false,
+        "collaborators": [],
         "description": null,
         "url": null,
         "location": null
