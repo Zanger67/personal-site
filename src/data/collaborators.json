@@ -186,7 +186,9 @@
   "kieran-slattery": {
     "display-name": "Kieran Slattery",
     "url": "https://github.com/kslat",
-    "urls": {},
+    "urls": {
+      "LinkedIn": "https://www.linkedin.com/in/kieran-slattery-5b423637b/"
+    },
     "affiliations": [],
     "years": [],
     "listed": true,
