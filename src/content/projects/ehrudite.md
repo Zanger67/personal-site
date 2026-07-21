@@ -14,6 +14,7 @@ metrics: {}
 tags: ["Hackathon", "Python", "RAG", "SQL", "NLiDB", "Pandas"]
 affiliations: ["Hackalytics 2024"]
 collaborators: ["isaac-song", "anthony-zang", "zini-chakraborty", "michael-edoigiawerie"]
+contributions: {}
 relationGroups: ["hackathon"]
 pinned: false
 main: false

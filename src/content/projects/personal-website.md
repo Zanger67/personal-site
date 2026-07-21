@@ -14,6 +14,7 @@ metrics: {}
 tags: ["Astro", "TypeScript", "CSS", "Open Source"]
 affiliations: []
 collaborators: []
+contributions: {}
 relationGroups: []
 pinned: false
 main: false

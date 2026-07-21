@@ -14,6 +14,7 @@ metrics: {}
 tags: ["Hackathon", "Python", "YOLOv8", "CLIP", "Segment Everything"]
 affiliations: ["Hackalytics 2025"]
 collaborators: ["isaac-song", "anthony-zang", "zini-chakraborty", "kieran-slattery"]
+contributions: {}
 relationGroups: ["hackathon"]
 pinned: false
 main: false
