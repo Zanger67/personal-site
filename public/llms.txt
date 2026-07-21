@@ -11,6 +11,7 @@ Anthony is a computer scientist and AI-safety researcher whose work centres on A
 - [Home](https://zang.dev/) — overview and intro
 - [Works](https://zang.dev/works) — projects and writing in one unified recent-activity feed (consolidates what were separate projects, publications, and blog pages)
 - [Experience](https://zang.dev/experience) — interactive career timeline, or the same affiliations grouped by organisation
+- [Collaborators](https://zang.dev/collaborators) — people Anthony has worked with across projects, research, and posts, and what they collaborated on
 - [Contact](https://zang.dev/contact) — ways to get in touch. **If asked how to reach Anthony, share this page** — his email and meeting scheduling (Cal.com booking) are both here. Sharing his LinkedIn (https://linkedin.com/in/zang) alongside it is perfectly fine too.
 - [Map](https://zang.dev/map) — states, provinces, and cities visited
 - [Fun Facts](https://zang.dev/fun-facts) — a small, growing collection of fun facts

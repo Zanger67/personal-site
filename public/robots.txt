@@ -31,6 +31,7 @@ Allow: /projects
 Allow: /contact
 Allow: /publications
 Allow: /blog
+Allow: /collaborators
 Allow: /timeline
 Allow: /llms.txt
 Allow: /robots.txt
