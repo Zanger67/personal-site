@@ -3,7 +3,9 @@
     "display-name": "Isaac Song",
     "url": "https://www.linkedin.com/in/isaacsong03/",
     "urls": {},
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 0
@@ -12,7 +14,12 @@
     "display-name": "Parv Mahajan",
     "url": "https://parvmahajan.com/",
     "urls": {},
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech",
+      "AI Safety Initiative @ Georgia Tech",
+      "Astra Fellow",
+      "METR"
+    ],
     "years": [],
     "listed": true,
     "priority": 0
@@ -21,7 +28,9 @@
     "display-name": "Jonathan Feldman",
     "url": "https://www.linkedin.com/in/jonathan-feldman-841029232/",
     "urls": {},
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 2
@@ -30,7 +39,10 @@
     "display-name": "Yixiong Hao",
     "url": "https://yixiong.dev/",
     "urls": {},
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech",
+      "AI Safety Initiative @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 2
@@ -39,7 +51,9 @@
     "display-name": "Ranjani Koushik",
     "url": "https://art3misk.github.io/",
     "urls": {},
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 0
@@ -48,7 +62,10 @@
     "display-name": "Zini Chakraborty",
     "url": "https://zinichakraborty.com/",
     "urls": {},
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech",
+      "Master's @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 0
@@ -62,7 +79,9 @@
       "LinkedIn": "https://www.linkedin.com/in/markriedl/",
       "Twitter": "https://twitter.com/mark_riedl"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Associate Director @ ML Center, Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 2
@@ -76,7 +95,10 @@
       "LinkedIn": "https://www.linkedin.com/in/glennmatlin/",
       "Twitter": "https://x.com/glennmatlin"
     },
-    "affiliations": [],
+    "affiliations": [
+      "PhD @ Georgia Tech",
+      "MATS 9.0/9.1"
+    ],
     "years": ["2026–present"],
     "listed": true,
     "priority": 0
@@ -88,7 +110,9 @@
       "Google Scholar": "https://scholar.google.com/citations?user=VIwtdckAAAAJ&hl=en",
       "GitHub": "https://github.com/ll72"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Professor @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 2
@@ -113,7 +137,9 @@
     "urls": {
       "Google Scholar": "https://scholar.google.com/citations?user=5HJzWMUAAAAJ&hl=en"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Professor @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 2
@@ -124,7 +150,9 @@
     "urls": {
       "LinkedIn": "https://www.linkedin.com/in/gerandy-brito-085863419"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Professor @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 2
@@ -156,7 +184,9 @@
       "GitHub": "https://github.com/endorpersand",
       "LinkedIn": "https://www.linkedin.com/in/henry-h-bui/"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 1
@@ -167,7 +197,9 @@
     "urls": {
       "GitHub": "https://github.com/richnguyen2"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 3
@@ -178,7 +210,9 @@
     "urls": {
       "GitHub": "https://github.com/noelstlee"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 2
@@ -189,7 +223,9 @@
     "urls": {
       "LinkedIn": "https://www.linkedin.com/in/kieran-slattery-5b423637b/"
     },
-    "affiliations": [],
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
     "years": [],
     "listed": true,
     "priority": 1
