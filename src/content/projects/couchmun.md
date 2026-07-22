@@ -14,7 +14,13 @@ metrics: {}
 tags: ["Svelte", "TypeScript", "Open Source"]
 affiliations: ["Georgia Tech Model United Nations"]
 collaborators: ["henry-bui", "isaac-song", "anthony-zang"]
-contributions: {}
+contributions:
+  "†":
+    note: null
+    people: ["henry-bui", "isaac-song", "anthony-zang"]
+  "*":
+    note: null
+    people: ["henry-bui", "anthony-zang"]
 relationGroups: []
 pinned: true
 main: true

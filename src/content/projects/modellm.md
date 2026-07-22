@@ -14,7 +14,16 @@ metrics: {}
 tags: ["Python", "Simulations"]
 affiliations: []
 collaborators: ["anthony-zang", "isaac-song", "richard-nguyen", "seungtaek-lee"]
-contributions: {}
+contributions:
+  "†":
+    note: null
+    people: ["anthony-zang"]
+  "‡":
+    note: null
+    people: ["isaac-song"]
+  "§":
+    note: null
+    people: ["richard-nguyen", "seungtaek-lee"]
 relationGroups: []
 pinned: true
 main: false
