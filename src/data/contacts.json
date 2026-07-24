@@ -23,6 +23,17 @@
     "display": "github.com/Zanger67"
   },
   {
+    "label": "GitLab",
+    "url": "https://gitlab.com/Zanger67",
+    "display": "gitlab.com/Zanger67",
+    "subs": [
+      {
+        "url": "https://gitlab.gnome.org/Zanger67",
+        "display": "gitlab.gnome.org/Zanger67"
+      }
+    ]
+  },
+  {
     "label": "Twitter",
     "url": "https://twitter.com/anthonywzang",
     "display": "@anthonywzang"
