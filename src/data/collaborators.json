@@ -2,7 +2,9 @@
   "isaac-song": {
     "display-name": "Isaac Song",
     "url": "https://www.linkedin.com/in/isaacsong03/",
-    "urls": {},
+    "urls": {
+      "GitHub": "https://github.com/iiisong/"
+    },
     "affiliations": [
       "Undergrad @ Georgia Tech"
     ],
@@ -13,7 +15,12 @@
   "parv-mahajan": {
     "display-name": "Parv Mahajan",
     "url": "https://parvmahajan.com/",
-    "urls": {},
+    "urls": {
+      "Google Scholar": "https://scholar.google.com/citations?user=6Bn9wJcAAAAJ&hl=en",
+      "LinkedIn": "https://linkedin.com/in/parv-mahajan",
+      "Twitter": "https://x.com/parvmahajan0",
+      "LessWrong": "https://www.lesswrong.com/users/parv-mahajan"
+    },
     "affiliations": [
       "Undergrad @ Georgia Tech",
       "AI Safety Initiative @ Georgia Tech",
@@ -38,7 +45,13 @@
   "yixiong-hao": {
     "display-name": "Yixiong Hao",
     "url": "https://yixiong.dev/",
-    "urls": {},
+    "urls": {
+      "Google Scholar": "https://scholar.google.com/citations?user=TzkRf0QAAAAJ&hl=en",
+      "GitHub": "https://github.com/YixiongHao",
+      "LinkedIn": "https://www.linkedin.com/in/yixiong-hao/",
+      "Twitter": "https://x.com/Yixiong_Hao",
+      "Substack": "https://substack.com/@yixiong"
+    },
     "affiliations": [
       "Undergrad @ Georgia Tech",
       "AI Safety Initiative @ Georgia Tech"
@@ -61,7 +74,11 @@
   "zini-chakraborty": {
     "display-name": "Zini Chakraborty",
     "url": "https://zinichakraborty.com/",
-    "urls": {},
+    "urls": {
+      "Google Scholar": "https://scholar.google.com/citations?user=b9LkjPAAAAAJ&hl=en",
+      "GitHub": "https://github.com/zinichakraborty",
+      "LinkedIn": "https://www.linkedin.com/in/chandreyi-zini-chakraborty/"
+    },
     "affiliations": [
       "Undergrad @ Georgia Tech",
       "Master's @ Georgia Tech"
