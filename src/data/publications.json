@@ -1,1 +1,103 @@
-[]
+[
+  {
+    "title": "Role Steering of Language Models for Social Simulations",
+    "authors": [
+      { "isaac-song": ["equal-first"] },
+      { "mohammed-rehan-parwani": ["equal-first"] },
+      { "glenn-matlin": ["equal-first", "corresponding"] },
+      "emile-timothy-anand",
+      "akhil-theerthala",
+      "arjun-chatterjee",
+      "anthony-zang",
+      { "maria-kostylew": ["advisor"] },
+      { "yonadav-shavit": ["advisor"] },
+      { "sebastien-krier": ["advisor"] },
+      { "mark-riedl": ["advisor"] }
+    ],
+    "contributions": {},
+    "venue": "COLM 2026 Social Simulations Workshop",
+    "date": "2026-07",
+    "role": null,
+    "affiliations": [
+      "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
+    ],
+    "url": null,
+    "urls": [],
+    "features": [],
+    "tags": [
+      "Persona Vectors",
+      "Activation Steering",
+      "Interpretability",
+      "Language Models"
+    ],
+    "metrics": {},
+    "relationGroups": [
+      "social-simulations"
+    ],
+    "main": true
+  },
+  {
+    "title": "What Do Language Models Control in Social Simulations? Mapping Player and Adjudicator Roles in AI Wargames",
+    "authors": [
+      { "glenn-matlin": ["corresponding"] },
+      "isaac-song",
+      "yixiong-hao",
+      "parv-mahajan",
+      "evan-montoya",
+      "ryan-bard",
+      "stuart-topp",
+      "anthony-zang",
+      "mohammed-rehan-parwani",
+      "soham-shetty",
+      { "mark-riedl": ["advisor"] }
+    ],
+    "contributions": {},
+    "venue": "COLM 2026 Social Simulations Workshop",
+    "date": "2026-07",
+    "role": null,
+    "affiliations": [
+      "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
+    ],
+    "url": null,
+    "urls": [],
+    "features": [],
+    "tags": [
+      "Wargaming",
+      "Evaluations",
+      "Language Models"
+    ],
+    "metrics": {},
+    "relationGroups": [
+      "social-simulations"
+    ],
+    "main": true
+  },
+  {
+    "title": "No One Wins in Nuclear War: Social Simulations of High-stakes Military Decision-making",
+    "authors": [
+      { "glenn-matlin": ["corresponding"] },
+      "isaac-song",
+      "anthony-zang",
+      { "mark-riedl": ["advisor"] }
+    ],
+    "contributions": {},
+    "venue": "COLM 2026 Social Simulations Workshop",
+    "date": "2026-07",
+    "role": null,
+    "affiliations": [
+      "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
+    ],
+    "url": null,
+    "urls": [],
+    "features": [],
+    "tags": [
+      "Wargaming",
+      "Language Models"
+    ],
+    "metrics": {},
+    "relationGroups": [
+      "social-simulations"
+    ],
+    "main": true
+  }
+]

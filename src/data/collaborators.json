@@ -273,5 +273,59 @@
     "years": [],
     "listed": true,
     "priority": 0
+  },
+  "mohammed-rehan-parwani": {
+    "display-name": "Mohammed Rehan Parwani",
+    "url": "https://rehan35.github.io/",
+    "urls": {
+      "Google Scholar": "https://scholar.google.com/citations?user=jn9DBTEAAAAJ&hl=en",
+      "GitHub": "https://github.com/rehan35",
+      "Twitter": "https://x.com/rehan_parwani"
+    },
+    "affiliations": [
+      "Undergrad @ Georgia Tech"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "emile-timothy-anand": {
+    "display-name": "Emile Timothy Anand",
+    "url": "https://emiletimothy.net/",
+    "urls": {
+      "Google Scholar": "https://scholar.google.com/citations?user=nUXwVU8AAAAJ&hl=en",
+      "GitHub": "https://github.com/emiletimothy",
+      "LinkedIn": "https://www.linkedin.com/in/emiletimothyanand/"
+    },
+    "affiliations": [
+      "PhD @ Georgia Tech"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "akhil-theerthala": {
+    "display-name": "Akhil Theerthala",
+    "url": "https://akhiltheerthala.com/",
+    "urls": {
+      "GitHub": "https://github.com/Akhil-Theerthala",
+      "LinkedIn": "https://in.linkedin.com/in/akhil-theerthala"
+    },
+    "affiliations": [
+      "Applied Scientist @ Perfios",
+      "Research Affiliate @ Financial Services Innovation Lab, Georgia Tech"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "arjun-chatterjee": {
+    "display-name": "Arjun Chatterjee",
+    "url": null,
+    "urls": {},
+    "affiliations": [],
+    "years": [],
+    "listed": true,
+    "priority": 0
   }
 }

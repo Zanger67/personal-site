@@ -38,7 +38,7 @@ export const routes = [
   // enabled/disabled (also gates the homepage sections, RSS feed, and blog
   // post pages) — but nav:'none' since they live as tabs under Works now.
   { id: 'projects',     label: 'Projects',     href: '/projects',     nav: 'none', enabled: true  },
-  { id: 'publications', label: 'Publications', href: '/publications', nav: 'none', enabled: false }, // no publications yet
+  { id: 'publications', label: 'Publications', href: '/publications', nav: 'none', enabled: true  },
   { id: 'blog',         label: 'Blog',         href: '/blog',         nav: 'none', enabled: true  },
   { id: 'collaborators', label: 'Collaborators', href: '/collaborators', nav: 'misc', enabled: true },
   { id: 'map',          label: 'Map',          href: '/map',          nav: 'misc', enabled: true  },
@@ -86,7 +86,7 @@ export const enabledFooterLinks: FooterLink[] = footerLinks.filter(l => l.enable
 export const homeSections = {
   places: true,
   projects: true,
-  publications: false, // no publications yet (route also disabled)
+  publications: true,
   recentPosts: true,
   friends: true,       // the "Misc." research-friends block
   education: true,     // sidebar
