@@ -42,5 +42,10 @@
     "label": "Hugging Face",
     "url": "https://huggingface.co/zangydev",
     "display": "huggingface.co/zangydev"
+  },
+  {
+    "label": "OpenReview",
+    "url": "https://openreview.net/profile?id=~Anthony_Wen-Ming_Zang1",
+    "display": "~Anthony_Wen-Ming_Zang1"
   }
 ]
