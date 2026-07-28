@@ -15,10 +15,10 @@ tags: ["Hackathon", "Python", "RAG", "SQL", "NLiDB", "Pandas"]
 affiliations: ["Hackalytics 2024"]
 collaborators: ["isaac-song", "anthony-zang", "zini-chakraborty", "michael-edoigiawerie"]
 contributions:
-  "†":
+  equal-first:
     note: null
     people: ["isaac-song", "anthony-zang", "zini-chakraborty"]
-  "‡":
+  equal-second:
     note: null
     people: ["michael-edoigiawerie"]
 relationGroups: ["hackathon"]
