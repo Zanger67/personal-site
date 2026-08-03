@@ -113,6 +113,20 @@ export function friendsFirstNameOnly(): boolean {
   return friends.firstNameOnly;
 }
 
+// Homepage sidebar "Affiliations" block display options.
+export const affiliationsBlock = {
+  // Split the opted-in rows by whether they have ended: still-running rows
+  // lead as "Affiliations (current)", finished ones follow in a separate
+  // "Affiliations (past)" block. Flip off to keep every opted-in row — ended
+  // or not — in the single "Affiliations (current)" list.
+  splitPast: false,
+} as const;
+
+/** Should ended homepage affiliation rows split into their own "past" block? */
+export function splitPastAffiliations(): boolean {
+  return affiliationsBlock.splitPast;
+}
+
 // Analytics — GoatCounter (privacy-first, cookieless). When `goatCounter` is a
 // non-null endpoint, BaseLayout loads the counter (page views + referrers +
 // country geography) and exposes `window.trackEvent(path, title)` so pages can
