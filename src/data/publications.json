@@ -5,10 +5,10 @@
       { "isaac-song": ["equal-first"] },
       { "mohammed-rehan-parwani": ["equal-first"] },
       { "glenn-matlin": ["equal-first", "corresponding"] },
-      "emile-timothy-anand",
-      "akhil-theerthala",
-      "arjun-chatterjee",
-      "anthony-zang",
+      { "emile-timothy-anand": ["equal-second"] },
+      { "akhil-theerthala": ["equal-second"] },
+      { "arjun-chatterjee": ["equal-third"] },
+      { "anthony-zang": ["equal-third"] },
       { "maria-kostylew": ["advisor"] },
       { "yonadav-shavit": ["advisor"] },
       { "sebastien-krier": ["advisor"] },
@@ -39,18 +39,18 @@
     "main": true
   },
   {
-    "title": "What Do Language Models Control in Social Simulations? Mapping Player and Adjudicator Roles in AI Wargames",
+    "title": "Shall We Play a Game? Language Models for Open-ended Wargames",
     "authors": [
-      { "glenn-matlin": ["corresponding"] },
-      "isaac-song",
-      "yixiong-hao",
-      "parv-mahajan",
-      "evan-montoya",
-      "ryan-bard",
-      "stuart-topp",
-      "anthony-zang",
-      "mohammed-rehan-parwani",
-      "soham-shetty",
+      { "glenn-matlin": ["equal-first", "corresponding"] },
+      { "isaac-song": ["equal-second"] },
+      { "yixiong-hao": ["equal-second"] },
+      { "parv-mahajan": ["equal-second"] },
+      { "evan-montoya": ["equal-third"] },
+      { "ryan-bard": ["equal-third"] },
+      { "stuart-topp": ["equal-third"] },
+      { "anthony-zang": ["equal-fourth"] },
+      { "mohammed-rehan-parwani": ["equal-fourth"] },
+      { "soham-shetty": ["equal-fourth"] },
       { "mark-riedl": ["advisor"] }
     ],
     "contributions": {},
@@ -77,7 +77,7 @@
     "main": true
   },
   {
-    "title": "No One Wins in Nuclear War: Social Simulations of High-stakes Military Decision-making",
+    "title": "No One Wins in Nuclear War: A Social Simulation of Military Decision-making",
     "authors": [
       { "glenn-matlin": ["equal-first", "corresponding"] },
       { "isaac-song": ["equal-second"] },

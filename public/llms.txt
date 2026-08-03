@@ -53,8 +53,8 @@ Anthony is a computer scientist and AI-safety researcher whose work centres on A
 ## Publications
 
 - Role Steering of Language Models for Social Simulations — COLM 2026 Social Simulations Workshop. Isaac Song, Mohammed Rehan Parwani, Glenn Matlin, Emile Timothy Anand, Akhil Theerthala, Arjun Chatterjee, Anthony Wen-Ming Zang, Maria Kostylew, Yonadav G. Shavit, Sebastien Krier, Mark Riedl.
-- What Do Language Models Control in Social Simulations? Mapping Player and Adjudicator Roles in AI Wargames — COLM 2026 Social Simulations Workshop. Glenn Matlin, Isaac Song, Yixiong Hao, Parv Mahajan, Evan Montoya, Ryan Bard, Stuart R. Topp, Anthony Wen-Ming Zang, Mohammed Rehan Parwani, Soham Shetty, Mark Riedl.
-- No One Wins in Nuclear War: Social Simulations of High-stakes Military Decision-making — COLM 2026 Social Simulations Workshop. Glenn Matlin, Isaac Song, Anthony Wen-Ming Zang, Mark Riedl.
+- Shall We Play a Game? Language Models for Open-ended Wargames — COLM 2026 Social Simulations Workshop. Glenn Matlin, Isaac Song, Yixiong Hao, Parv Mahajan, Evan Montoya, Ryan Bard, Stuart R. Topp, Anthony Wen-Ming Zang, Mohammed Rehan Parwani, Soham Shetty, Mark Riedl.
+- No One Wins in Nuclear War: A Social Simulation of Military Decision-making — COLM 2026 Social Simulations Workshop. Glenn Matlin, Isaac Song, Anthony Wen-Ming Zang, Mark Riedl.
 
 ## Projects
 
