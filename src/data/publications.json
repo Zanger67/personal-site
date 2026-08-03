@@ -75,9 +75,9 @@
   {
     "title": "No One Wins in Nuclear War: Social Simulations of High-stakes Military Decision-making",
     "authors": [
-      { "glenn-matlin": ["corresponding"] },
-      "isaac-song",
-      "anthony-zang",
+      { "glenn-matlin": ["equal-first", "corresponding"] },
+      { "isaac-song": ["equal-second"] },
+      { "anthony-zang": ["equal-second"] },
       { "mark-riedl": ["advisor"] }
     ],
     "contributions": {},
