@@ -21,8 +21,10 @@
     "affiliations": [
       "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
     ],
-    "url": null,
-    "urls": [],
+    "url": "https://openreview.net/forum?id=13OhSjM4cN",
+    "urls": [
+      { "title": "PDF", "url": "https://openreview.net/pdf?id=13OhSjM4cN" }
+    ],
     "features": [],
     "tags": [
       "Persona Vectors",
@@ -58,8 +60,10 @@
     "affiliations": [
       "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
     ],
-    "url": null,
-    "urls": [],
+    "url": "https://openreview.net/forum?id=jNGi4ugi85",
+    "urls": [
+      { "title": "PDF", "url": "https://openreview.net/pdf?id=jNGi4ugi85" }
+    ],
     "features": [],
     "tags": [
       "Wargaming",
@@ -87,8 +91,10 @@
     "affiliations": [
       "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
     ],
-    "url": null,
-    "urls": [],
+    "url": "https://openreview.net/forum?id=aGeLUOTn3R",
+    "urls": [
+      { "title": "PDF", "url": "https://openreview.net/pdf?id=aGeLUOTn3R" }
+    ],
     "features": [],
     "tags": [
       "Wargaming",
