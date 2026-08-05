@@ -28,6 +28,35 @@
     ]
   },
   {
+    "organization": "BlueDot Impact",
+    "organizationShort": "BlueDot",
+    "url": "https://bluedot.org/",
+    "location": null,
+    "categories": ["education"],
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": ["aisi"],
+    "metrics": {},
+    "collaborators": [],
+    "membership": null,
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Frontier AI Governance Course",
+        "roleDetail": null,
+        "categories": ["education"],
+        "start": "2026-07",
+        "end": "2026-08",
+        "main": true,
+        "homepage": false,
+        "collaborators": [],
+        "description": null,
+        "url": "https://bluedot.org/courses/ai-governance",
+        "location": null
+      }
+    ]
+  },
+  {
     "organization": "Redwood Research",
     "organizationShort": "Redwood Research",
     "url": "https://www.redwoodresearch.org/",
