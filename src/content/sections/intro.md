@@ -2,18 +2,21 @@
 title: Home intro
 ---
 
-I'm a Master's student in Computer Science at
-[Georgia Tech](https://gatech.edu), where my research focuses on AI safety,
-interpretability, and observability. At the [EILab](https://eilab.gatech.edu/)
-under the guidance of [Dr. Mark Riedl](https://eilab.gatech.edu/mark-riedl.html)
+I'm a MS CS researcher at the [Entertainment Intelligence and Human-Centered AI Labs](https://eilab.gatech.edu/) at Georgia Tech
+advised by [Dr. Mark Riedl](https://eilab.gatech.edu/mark-riedl.html)
 (Director, GT Center for ML) and PhD Candidate
-[Glenn Matlin](https://glennmatlin.doctor/about.html), I work on persona vectors
-and humanistic modeling in LLMs. I'm also a member of the
-[AI Safety Initiative at Georgia Tech](https://www.aisi.dev/) and a Lead Graduate
-TA for algorithms under [Dr. Will Perkins](https://willperkins.org/).
+[Glenn Matlin](https://glennmatlin.doctor/about.html) working on persona vectors, humanistic modeling, and wargaming with LLMs. 
 
-Previously, I Head TA'd Discrete Mathematics under
+I'm also a contract Research Engineer for [Redwood Research](https://www.redwoodresearch.org/) and a member of the
+[AI Safety Initiative at Georgia Tech](https://www.aisi.dev/).
+
+Currently, I'm enroute to become a Member of Engineering at [Applied Intuition](https://www.appliedintuition.com/). 
+I've also worked in the past at 
+[Datadog](https://www.datadoghq.com/) as a Infrastructure Software Engineering Intern.
+
+Previously, I Head/Lead TA'd Algorithms and before that Discrete Maths under
 [Dr. Gerandy Brito](https://gerandybm.wixsite.com/mysite),
+[Dr. Will Perkins](https://willperkins.org/),
 [Abrahim Ladha](https://faculty.cc.gatech.edu/~ladha/),
 [Frederic Faulkner](https://www.cc.gatech.edu/cv/ffaulkner3), and
 [Ronnie Howard](https://www.cc.gatech.edu/cv/rhoward46), led pointcloud synthetic
