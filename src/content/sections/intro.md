@@ -27,11 +27,8 @@ data research under
 by [Dr. Rich Vuduc](https://vuduc.org/v2/) and others at the
 [Center for High-Performance Computing (CHIPC)](https://chipc.gatech.edu/).
 
-We've not reached a point in progression where one person cannot truly master
-everything, top-down, needed to build our daily items — it's something that keeps
-me in awe. Though, irregardless, I find the most joy trying to understand the
-fractions of it that I can, and especially in investigating the discoveries that
-we've yet to uncover. The settings I love most are those in which I'm aware that
+I find the most joy trying to understand the fractions of the world I can in my limited time, 
+and especially in investigating the discoveries that we've yet to uncover. The settings I love most are those in which I'm aware that
 I'm surrounded by knowledge I don't yet know — knowledge that I have yet to learn.
 
 In my free time, I love climbing trees, tending to my plants, making bouquets, and
