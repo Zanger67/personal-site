@@ -96,9 +96,10 @@
     "affiliations": [
       "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
     ],
-    "url": "https://openreview.net/forum?id=13OhSjM4cN",
+    "url": "https://arxiv.org/abs/2608.00023",
     "urls": [
-      { "title": "PDF", "url": "https://openreview.net/pdf?id=13OhSjM4cN" }
+      { "title": "PDF", "url": "https://arxiv.org/pdf/2608.00023" },
+      { "title": "OpenReview", "url": "https://openreview.net/forum?id=13OhSjM4cN" }
     ],
     "features": [],
     "tags": [
