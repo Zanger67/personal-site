@@ -73,6 +73,7 @@ Anthony is a computer scientist and AI-safety researcher whose work centres on A
 - LinkedIn: https://linkedin.com/in/zang
 - Twitter/X: https://twitter.com/anthonywzang
 - Hugging Face: https://huggingface.co/zangydev
+- Google Scholar: https://scholar.google.com/citations?user=zpjl5lkAAAAJ
 - OpenReview: https://openreview.net/profile?id=~Anthony_Wen-Ming_Zang1
 - Book a call: https://cal.com/zangy
 - Contact / email: https://zang.dev/contact

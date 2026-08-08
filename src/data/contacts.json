@@ -44,6 +44,11 @@
     "display": "huggingface.co/zangydev"
   },
   {
+    "label": "Google Scholar",
+    "url": "https://scholar.google.com/citations?user=zpjl5lkAAAAJ",
+    "display": "scholar.google.com/citations?user=zpjl5lkAAAAJ"
+  },
+  {
     "label": "OpenReview",
     "url": "https://openreview.net/profile?id=~Anthony_Wen-Ming_Zang1",
     "display": "~Anthony_Wen-Ming_Zang1"
