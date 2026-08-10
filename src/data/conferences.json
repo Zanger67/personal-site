@@ -1,5 +1,19 @@
 [
   {
+    "name": "COLM 2026",
+    "role": null,
+    "url": "https://colm.eventhosts.cc/",
+    "location": "San Francisco, CA",
+    "date": "2026-10",
+    "description": "The Conference on Language Models — an academic venue for research on language modeling. October 6–9, 2026 at the Hilton Union Square.",
+    "urls": [],
+    "features": [],
+    "affiliations": ["Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"],
+    "relationGroups": ["social-simulations"],
+    "metrics": {},
+    "main": false
+  },
+  {
     "name": "DASH 2025 by Datadog",
     "role": "Volunteer Organiser",
     "url": "https://dash.datadoghq.com/",
