@@ -1,5 +1,33 @@
 [
   {
+    "organization": "Constellation",
+    "organizationShort": null,
+    "url": "https://www.constellation.org/",
+    "location": "Berkeley, California",
+    "categories": ["research"],
+    "displayTimeline": true,
+    "main": false,
+    "relationGroups": ["aisi"],
+    "metrics": {},
+    "collaborators": [],
+    "membership": null,
+    "alumnus": null,
+    "roles": [
+      {
+        "role": "Visiting Researcher",
+        "roleDetail": null,
+        "start": "2026-08",
+        "end": "2026-08",
+        "main": true,
+        "homepage": false,
+        "collaborators": [],
+        "description": null,
+        "url": null,
+        "location": null
+      }
+    ]
+  },
+  {
     "organization": "Applied Intuition",
     "organizationShort": null,
     "url": "https://www.appliedintuition.com/",
