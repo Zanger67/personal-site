@@ -119,7 +119,7 @@
     "url": "https://eilab.gatech.edu/",
     "urls": [
       { "url": "https://huggingface.co/HCAI-Lab" },
-      { "url": "https://github.com/eilab-gt" }
+      { "url": "https://github.com/HCAI-Lab-GT" }
     ],
     "location": "Atlanta, GA",
     "categories": ["research", "work"],
