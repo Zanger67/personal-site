@@ -3,7 +3,8 @@
     "display-name": "Isaac Song",
     "url": "https://www.linkedin.com/in/isaacsong03/",
     "urls": {
-      "GitHub": "https://github.com/iiisong/"
+      "GitHub": "https://github.com/iiisong/",
+      "Google Scholar": "https://scholar.google.com/citations?user=RzZ3wc0AAAAJ&hl=en"
     },
     "affiliations": [
       "Undergrad @ Georgia Tech"
@@ -114,7 +115,7 @@
     },
     "affiliations": [
       "PhD @ Georgia Tech",
-      "MATS 9.0/9.1"
+      "MATS 9.0/9.1/9.2"
     ],
     "years": ["2026–present"],
     "listed": true,
@@ -330,8 +331,11 @@
   },
   "saehee-eom": {
     "display-name": "Saehee Eom",
-    "url": null,
-    "urls": {},
+    "url": "https://www.linkedin.com/in/saehee-eom/",
+    "urls": {
+      "Google Scholar": "https://scholar.google.com/citations?user=zz2pecsAAAAJ&hl=en",
+      "OpenReview": "https://openreview.net/profile?id=~Saehee_Eom1"
+    },
     "affiliations": [],
     "years": [],
     "listed": true,
