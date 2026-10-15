@@ -14,7 +14,27 @@
       "alvin-deng",
       { "mark-riedl": ["advisor"] }
     ],
-    "authorAffiliations": {},
+    "authorAffiliations": {
+      "georgia-tech": [
+        "glenn-matlin",
+        "mohammed-rehan-parwani",
+        "anthony-zang",
+        "mark-riedl"
+      ],
+      "mats": [
+        "glenn-matlin"
+      ],
+      "gt-ai-safety-initiative": [
+        "glenn-matlin",
+        "anthony-zang"
+      ],
+      "independent": [
+        "akhil-theerthala"
+      ],
+      "uiuc": [
+        "arjun-chatterjee"
+      ]
+    },
     "contributions": {},
     "venue": "NeurIPS 2026 ATTRIB Workshop",
     "date": "2026-10-01",
