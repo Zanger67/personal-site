@@ -327,5 +327,41 @@
     "years": [],
     "listed": true,
     "priority": 0
+  },
+  "saehee-eom": {
+    "display-name": "Saehee Eom",
+    "url": null,
+    "urls": {},
+    "affiliations": [],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "tejas-khandwekar": {
+    "display-name": "Tejas Khandwekar",
+    "url": null,
+    "urls": {},
+    "affiliations": [],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "brandon-michaels": {
+    "display-name": "Brandon Michaels",
+    "url": null,
+    "urls": {},
+    "affiliations": [],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "alvin-deng": {
+    "display-name": "Alvin Deng",
+    "url": null,
+    "urls": {},
+    "affiliations": [],
+    "years": [],
+    "listed": true,
+    "priority": 0
   }
 }

@@ -1,5 +1,40 @@
 [
   {
+    "title": "Data Attribution Should Guide Pretraining",
+    "authors": [
+      { "glenn-matlin": ["corresponding"] },
+      "zini-chakraborty",
+      "mohammed-rehan-parwani",
+      "saehee-eom",
+      "anthony-zang",
+      "akhil-theerthala",
+      "arjun-chatterjee",
+      "tejas-khandwekar",
+      "brandon-michaels",
+      "alvin-deng",
+      { "mark-riedl": ["advisor"] }
+    ],
+    "authorAffiliations": {},
+    "contributions": {},
+    "venue": "NeurIPS 2026 ATTRIB Workshop",
+    "date": "2026-10-01",
+    "role": null,
+    "affiliations": [
+      "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
+    ],
+    "url": "https://openreview.net/forum?id=2BKWkoSSUt",
+    "urls": [],
+    "features": [],
+    "tags": [
+      "Data Attribution",
+      "Pretraining",
+      "Language Models"
+    ],
+    "metrics": {},
+    "relationGroups": [],
+    "main": true
+  },
+  {
     "title": "No One Wins in Nuclear War: A Social Simulation of Military Decision-making",
     "authors": [
       { "glenn-matlin": ["equal-first", "corresponding"] },
