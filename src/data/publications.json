@@ -102,10 +102,10 @@
     "affiliations": [
       "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
     ],
-    "url": "https://openreview.net/forum?id=2BKWkoSSUt",
+    "url": "https://arxiv.org/abs/2611.19698",
     "urls": [
-      { "url": "https://arxiv.org/abs/2611.19698" },
       { "title": "PDF", "url": "https://arxiv.org/pdf/2611.19698" },
+      { "title": "OpenReview", "url": "https://openreview.net/forum?id=2BKWkoSSUt" },
       { "title": "NeurIPS", "url": "https://neurips.cc/virtual/2026/loc/sydney/161714" }
     ],
     "features": [],
