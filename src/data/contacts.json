@@ -20,7 +20,19 @@
   {
     "label": "GitHub",
     "url": "https://github.com/Zanger67",
-    "display": "github.com/Zanger67"
+    "display": "github.com/Zanger67",
+    "subs": [
+      {
+        "url": "https://github.com/dd-anthonyzang",
+        "display": "github.com/dd-anthonyzang",
+        "note": "Datadog"
+      },
+      {
+        "url": "https://github.com/anthony-zang-ai",
+        "display": "github.com/anthony-zang-ai",
+        "note": "Applied Intuition"
+      }
+    ]
   },
   {
     "label": "GitLab",
