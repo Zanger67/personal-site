@@ -150,7 +150,8 @@
     "url": "https://arxiv.org/abs/2608.01868",
     "urls": [
       { "title": "PDF", "url": "https://arxiv.org/pdf/2608.01868" },
-      { "title": "OpenReview", "url": "https://openreview.net/forum?id=aGeLUOTn3R" }
+      { "title": "OpenReview", "url": "https://openreview.net/forum?id=aGeLUOTn3R" },
+      { "title": "COLM", "url": "https://colm.cc/virtual/2026/2808" }
     ],
     "features": [],
     "tags": [
@@ -217,7 +218,8 @@
     "url": "https://arxiv.org/abs/2608.00023",
     "urls": [
       { "title": "PDF", "url": "https://arxiv.org/pdf/2608.00023" },
-      { "title": "OpenReview", "url": "https://openreview.net/forum?id=13OhSjM4cN" }
+      { "title": "OpenReview", "url": "https://openreview.net/forum?id=13OhSjM4cN" },
+      { "title": "COLM", "url": "https://colm.cc/virtual/2026/2829" }
     ],
     "features": [],
     "tags": [
@@ -281,7 +283,8 @@
     "url": "https://arxiv.org/abs/2509.17192",
     "urls": [
       { "title": "PDF", "url": "https://arxiv.org/pdf/2509.17192" },
-      { "title": "OpenReview", "url": "https://openreview.net/forum?id=jNGi4ugi85" }
+      { "title": "OpenReview", "url": "https://openreview.net/forum?id=jNGi4ugi85" },
+      { "title": "COLM", "url": "https://colm.cc/virtual/2026/2798" }
     ],
     "features": [],
     "tags": [
