@@ -103,7 +103,10 @@
       "Entertainment Intelligence and Human-Centered AI Lab, Georgia Tech"
     ],
     "url": "https://openreview.net/forum?id=2BKWkoSSUt",
-    "urls": [],
+    "urls": [
+      { "url": "https://arxiv.org/html/2611.19698" },
+      { "title": "NeurIPS", "url": "https://neurips.cc/virtual/2026/loc/sydney/161714" }
+    ],
     "features": [],
     "tags": [
       "Data Attribution",
