@@ -367,5 +367,86 @@
     "years": [],
     "listed": true,
     "priority": 0
+  },
+  "keshav-shenoy": {
+    "display-name": "Keshav Shenoy",
+    "url": "https://www.lesswrong.com/users/keshavs",
+    "urls": {},
+    "affiliations": [
+      "Redwood Research"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "eric-gan": {
+    "display-name": "Eric Gan",
+    "url": "https://www.lesswrong.com/users/egan",
+    "urls": {},
+    "affiliations": [
+      "Redwood Research"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "jacqueline-tay": {
+    "display-name": "Jacqueline Tay",
+    "url": null,
+    "urls": {},
+    "affiliations": [],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "amy-ngo": {
+    "display-name": "Amy Ngo",
+    "url": "https://github.com/amydn16",
+    "urls": {},
+    "affiliations": [
+      "Equistamp"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "sebastian-prasanna": {
+    "display-name": "Sebastian Prasanna",
+    "url": "https://www.lesswrong.com/users/sebastian_prasanna",
+    "urls": {},
+    "affiliations": [
+      "Redwood Research"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "julian-stastny": {
+    "display-name": "Julian Stastny",
+    "url": "https://www.linkedin.com/in/julian-stastny-3a0b45164",
+    "urls": {
+      "Google Scholar": "https://scholar.google.com/citations?user=eKMjNWcAAAAJ&hl=en",
+      "LessWrong": "https://www.lesswrong.com/users/julian-stastny"
+    },
+    "affiliations": [
+      "Member of Technical Staff @ Redwood Research"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
+  },
+  "vivek-hebbar": {
+    "display-name": "Vivek Hebbar",
+    "url": "https://www.linkedin.com/in/vivek-hebbar-0151b51b0",
+    "urls": {
+      "LessWrong": "https://www.lesswrong.com/users/vivek-1",
+      "Alignment Forum": "https://www.alignmentforum.org/users/vivek-1"
+    },
+    "affiliations": [
+      "Member of Technical Staff @ Redwood Research"
+    ],
+    "years": [],
+    "listed": true,
+    "priority": 0
   }
 }
