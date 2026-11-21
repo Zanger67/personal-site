@@ -177,7 +177,7 @@
         "start": "2025-08",
         "end": "2025-12",
         "main": true,
-        "homepage": true,
+        "homepage": false,
         "collaborators": [],
         "description": null,
         "url": null,
