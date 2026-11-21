@@ -17,6 +17,11 @@
           "title": "Dihydrogen Monoxide Facts",
           "url": "https://www.dhmo.org/faq.html",
           "description": "Sobering facts about the chemical also known as water."
+        },
+        {
+          "title": "Terminal2Shell",
+          "url": "https://terminal2shell.com/",
+          "description": "Critical, unpatched: opening a terminal grants an interactive shell."
         }
       ]
     }
