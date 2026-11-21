@@ -46,5 +46,17 @@
     "short": "MATS",
     "url": null,
     "icon": "🔥"
+  },
+  "redwood-research": {
+    "name": "Redwood Research",
+    "short": null,
+    "url": "https://www.redwoodresearch.org/",
+    "icon": "🌲"
+  },
+  "equistamp": {
+    "name": "Equistamp",
+    "short": null,
+    "url": null,
+    "icon": "📮"
   }
 }

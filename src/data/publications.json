@@ -1,5 +1,59 @@
 [
   {
+    "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
+    "authors": [
+      { "keshav-shenoy": ["corresponding"] },
+      "anthony-zang",
+      "eric-gan",
+      "jacqueline-tay",
+      "amy-ngo",
+      "sebastian-prasanna",
+      "julian-stastny",
+      "vivek-hebbar"
+    ],
+    "authorAffiliations": {
+      "redwood-research": [
+        "keshav-shenoy",
+        "eric-gan",
+        "sebastian-prasanna",
+        "julian-stastny",
+        "vivek-hebbar"
+      ],
+      "georgia-tech": [
+        "anthony-zang"
+      ],
+      "independent": [
+        "jacqueline-tay"
+      ],
+      "equistamp": [
+        "amy-ngo"
+      ]
+    },
+    "contributions": {},
+    "venue": "arXiv preprint",
+    "date": "2026-11",
+    "role": null,
+    "affiliations": [
+      "Redwood Research"
+    ],
+    "url": "https://arxiv.org/abs/2611.21832",
+    "urls": [
+      { "title": "PDF", "url": "https://arxiv.org/pdf/2611.21832" }
+    ],
+    "features": [],
+    "tags": [
+      "AI Control",
+      "Research Sabotage",
+      "Auditing",
+      "Language Models"
+    ],
+    "metrics": {},
+    "relationGroups": [
+      "redwood"
+    ],
+    "main": true
+  },
+  {
     "title": "Data Attribution Should Guide Pretraining",
     "authors": [
       { "glenn-matlin": ["corresponding"] },
