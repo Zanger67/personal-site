@@ -40,7 +40,11 @@
     "urls": [
       { "title": "PDF", "url": "https://arxiv.org/pdf/2611.21832" }
     ],
-    "features": [],
+    "features": [
+      { "title": "Redwood Blog", "url": "https://www.redwoodresearch.org/blog/auditors-struggle-to-catch-sabotage-in" },
+      { "url": "https://x.com/kshenoy_/status/2123851488292458566" },
+      { "url": "https://www.lesswrong.com/posts/hJELtMx786Gyei63e/auditors-struggle-to-catch-sabotage-in-end-to-end" }
+    ],
     "tags": [
       "AI Control",
       "Research Sabotage",
