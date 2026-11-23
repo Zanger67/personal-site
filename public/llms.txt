@@ -4,7 +4,7 @@
 
 ## About
 
-Anthony is a computer scientist and AI-safety researcher whose work centres on AI safety, interpretability, and observability. He earned his MS in Computer Science at the Georgia Institute of Technology (Aug 2025 – May 2026) and his BS in Computer Science there (Highest Honours). He is currently an AI Research Engineer (contract) at Redwood Research and an AI Researcher at Georgia Tech's Entertainment Intelligence & Human-Centered AI Lab (EI/HCAI Lab), and joins Applied Intuition as an engineer in August 2026. He previously interned on the backend & infrastructure team at Datadog, was a Technical Fellow with the AI Safety Initiative at Georgia Tech, and has served as a Lead Graduate TA for Algorithms (CS 3510) and Head TA for Discrete Mathematics (CS 2050).
+Anthony is a computer scientist and AI-safety researcher whose work centres on AI safety, interpretability, and observability. He earned his MS in Computer Science at the Georgia Institute of Technology (Aug 2025 – May 2026) and his BS in Computer Science there (Highest Honours). He is currently an AI Research Engineer (contract) at Redwood Research and an AI Researcher at Georgia Tech's Human-Centered AI Lab (HCAI Lab), and joins Applied Intuition as an engineer in August 2026. He previously interned on the backend & infrastructure team at Datadog, was a Technical Fellow with the AI Safety Initiative at Georgia Tech, and has served as a Lead Graduate TA for Algorithms (CS 3510) and Head TA for Discrete Mathematics (CS 2050).
 
 ## Pages
 
@@ -25,7 +25,7 @@ Anthony is a computer scientist and AI-safety researcher whose work centres on A
 ## Current Affiliations
 
 - Redwood Research — AI Research Engineer, contract (Mar 2026 – present)
-- Entertainment Intelligence & Human-Centered AI Lab (EI/HCAI Lab), Georgia Tech — AI Researcher (Sep 2025 – present)
+- Human-Centered AI Lab (HCAI Lab), Georgia Tech — AI Researcher (Sep 2025 – present)
 - BlueDot Impact — [Frontier AI Governance Course](https://bluedot.org/courses/ai-governance) (Jul 2026 – Aug 2026)
 - Constellation — Visiting Researcher (Aug 2026)
 - Applied Intuition — Engineering (incoming, starts Aug 2026)

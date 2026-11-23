@@ -2,7 +2,7 @@
 title: Home intro
 ---
 
-I'm a MS CS researcher at the [Entertainment Intelligence and Human-Centered AI Labs](https://eilab.gatech.edu/) at Georgia Tech
+I'm a MS CS researcher at the [Human-Centered AI Lab](https://eilab.gatech.edu/) at Georgia Tech
 advised by [Dr. Mark Riedl](https://eilab.gatech.edu/mark-riedl.html)
 (Director, GT Center for ML) and PhD Candidate
 [Glenn Matlin](https://glennmatlin.doctor/about.html) working on persona vectors, humanistic modeling, and wargaming with LLMs. 
