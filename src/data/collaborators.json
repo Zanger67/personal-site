@@ -61,6 +61,15 @@
     "listed": true,
     "priority": 2
   },
+  "tyler-stennett": {
+    "display-name": "Tyler Stennett",
+    "url": "https://tylerstennett.com/",
+    "urls": {},
+    "affiliations": [],
+    "years": [],
+    "listed": false,
+    "priority": 0
+  },
   "ranjani-koushik": {
     "display-name": "Ranjani Koushik",
     "url": "https://ranjani.dev/",
