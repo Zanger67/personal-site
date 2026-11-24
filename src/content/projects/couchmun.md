@@ -1,9 +1,9 @@
 ---
 title: "CouchMUN"
-description: "Open-source, locally run chairing platform for Model United Nations conferences. Deployed at conferences totaling 2,500+ participants."
+description: "Open-source, locally run chairing platform for Model United Nations conferences. Deployed at conferences totaling 2,500+ participants; still under development for use at collegiate conferences."
 role: "Co-Creator & Maintainer"
 startDate: 2024-06-01
-endDate: null
+endDate: 2026-05-01
 url: "https://couchmun.com/"
 repo: "https://github.com/gtmun/couchmun"
 template: null
