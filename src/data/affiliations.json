@@ -19,7 +19,7 @@
         "start": "2026-09",
         "end": null,
         "main": true,
-        "homepage": false,
+        "homepage": true,
         "collaborators": [],
         "description": "Research affiliate of [Lida Safety Research](https://lidasafety.org/), working on AI governance and social simulations.",
         "url": null,
